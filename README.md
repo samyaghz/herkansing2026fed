@@ -57,6 +57,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - Contrasten zijn goed ontworpen voor mensen die kleurenblind zijn. Er worden duidelijke kleuren gebruikt die verschillende states aangeven
+  - Slechtziend: scoort hier ook wel goed op. Grote plaatjes, knoppen en letters geven duidelijk weer wat de elementen op de website doen en betekenen. Tekst is groot vormgegeven. Maakt het leesbaar voor een gebruiker.
+
+  Voiceover Ben & Jerry’s:
+  - Link met ga naar de hoofdinhoud is aanwezig
+  - Slaat navigatie over (hoort dit?)
+  - Benoemt links en knoppen en artikels.
+  - Benoemt tekstveld en dat er daar een e-mail ingevuld moet worden
+  - Benoemt de lijst met vlaggen drop-down 
+  - Benoemt de lijst met social media links. Zegt ook hoeveel onderdelen er in het lijstje zitten
+  - Slaat images over
+
 
 </details>
 
