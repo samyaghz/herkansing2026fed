@@ -68,6 +68,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
+
+  Link naar de breakdown schetsen: https://www.figma.com/board/XfraMFkKXsVunC72MxdpcF/Samya_breakdownschetsen_ben-jerry-s?node-id=0-1&t=FBKOxpDlHpKeiLog-1
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
