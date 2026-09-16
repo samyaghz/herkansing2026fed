@@ -19,6 +19,14 @@
 	--color-background:#eee;
 }
 
+h1 {
+	display: none;
+}
+
+/* ul li {
+	list-style-type: none;
+} */
+
 
 
 

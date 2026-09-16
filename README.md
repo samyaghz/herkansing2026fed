@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Samya El Ghazi
 
   #### Je startniveau:
-  Blauwe piste
+  Blauwe piste. Ik vind programmeren erg lastig.
 
   #### Je focus:
   Focus ligt op responsiveness
@@ -43,8 +43,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/startpaginasmall.png" width="375px" alt="Startpagina van Ben & Jerry's">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Onze smaken  
+  <img src="readme-images/onzesmakenbjs.png" width="375px" alt="Ijssmaken pagina van Ben & Jerry's">
  
 </details>
 
@@ -59,6 +59,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
   - Contrasten zijn goed ontworpen voor mensen die kleurenblind zijn. Er worden duidelijke kleuren gebruikt die verschillende states aangeven
   - Slechtziend: scoort hier ook wel goed op. Grote plaatjes, knoppen en letters geven duidelijk weer wat de elementen op de website doen en betekenen. Tekst is groot vormgegeven. Maakt het leesbaar voor een gebruiker.
+  - Spasmes: De knoppen en klikbare functies zijn groot ontworpen, dus er is veel beweegruimte. Sommige knoppen mogen voor consistentie in de website misschien nog iets groter vormgegeven worden.
 
   Voiceover Ben & Jerry’s:
   - Link met ga naar de hoofdinhoud is aanwezig
@@ -82,17 +83,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
 
   Link naar de breakdown schetsen: https://www.figma.com/board/XfraMFkKXsVunC72MxdpcF/Samya_breakdownschetsen_ben-jerry-s?node-id=0-1&t=FBKOxpDlHpKeiLog-1
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### dynamisch onderdeel (topverhalen): 
+  <img src="readme-images/Topverhalen.png" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### dynamische onderdeel (ijssmaken): 
+  <img src="readme-images/ijssmakenlijst.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+  ### dynamische onderdeel (dropdown filter): 
+  <img src="readme-images/dropdownijs.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
-
-
 
 
 
@@ -102,17 +103,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het structureren van de html gaat denk ik wel goed. Ik heb bij een aantal onderdelen wel wat vragen. Ik heb bijvoorbeeld vragen of ik goede code gebruik, of iets makkelijker kan dan ik nu heb gedaan, en welke codes ik moet gebruiken voor email en search labels.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Student 1: Samya
+  Website: Ben & Jerry’s
+  Pagina’s die ik ga maken: Homepagina en Smaken pagina
+  
+  Vragen die ik tijdens de voortgang wil bespreken:
+  
+  - Ik heb alle titels een h2 gegeven en alle subtitels een h3, klopt dit op volgorde of moet ik h4’s en h5’s, of juist meer p's gebruiken?
+  
+  - Sommige iconen (menu icon, social media icons) op mijn website zijn spans en geen images die ik in mijn html kan zetten. Kan ik de spans gebruiken of is er een andere manier om deze iconen weer te geven op mijn website? Moeten de iconen ook aanpasbaar zijn voor light en dark mode?
+  
+  - Op de “Smaken” pagina heb ik nu de content in verschillende sections en articles gestopt. Is dit handig, of moet ik alles juist in 1 section stoppen, met daarin meerdere articles, met daarin een ul li?
+  
+  - Op de “Smaken” pagina veranderd de eerste image bovenaan de pagina. Op mobiel is er bijvoorbeeld geen animatie, en schuift het ijsje naar het midden. Op iPad en Desktop schuift het ijsje naar de rechterkant van de pagina en zijn de pijlen geanimeerd. Hoe zet ik deze images in de html?
+  
+  - In de footer heeft ben & jerry's een dropdown met vlaggen. Moeten deze in een ordered list of unordered list?
 
 
   ### Verslag van meeting
