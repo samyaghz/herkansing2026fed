@@ -70,6 +70,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Benoemt de lijst met social media links. Zegt ook hoeveel onderdelen er in het lijstje zitten
   - Slaat images over
 
+  ### WCAG lijst
+  Tijdens de les hebben in duo's elkaars website bekeken. Ik heb Lisa's website Claire's bekeken.
+
 
 </details>
 
@@ -113,18 +116,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Pagina’s die ik ga maken: Homepagina en Smaken pagina
   
   Vragen die ik tijdens de voortgang wil bespreken:
-  
-  - Ik heb alle titels een h2 gegeven en alle subtitels een h3, klopt dit op volgorde of moet ik h4’s en h5’s, of juist meer p's gebruiken?
 
-  - De nav heeft een drop-down op mobiel ipad en desktop. Is hier een html tag voor of is dit iets voor css?
+  - De nav heeft een drop-down op mobiel, ipad en desktop. Is hier een html tag voor of is dit iets voor css?
+
+  - Ik heb alle titels een h2 gegeven en alle subtitels een h3, klopt dit op volgorde of moet ik ook h4’s en h5’s gebruiken?
   
   - Sommige iconen (menu icon, social media icons) op mijn website zijn spans en geen images die ik in mijn html kan zetten. Kan ik de spans gebruiken of is er een andere manier om deze iconen weer te geven op mijn website? Moeten de iconen ook aanpasbaar zijn voor light en dark mode?
   
   - Op de “Smaken” pagina heb ik nu de content in verschillende sections en articles gestopt. Is dit handig, of moet ik alles juist in 1 section stoppen, met daarin meerdere articles, met daarin een ul li?
   
   - Op de “Smaken” pagina veranderd de eerste image bovenaan de pagina. Op mobiel is er bijvoorbeeld geen animatie, en staat het ijsje in het midden. Op iPad en Desktop schuift het ijsje naar de rechterkant van de pagina en zijn de pijlen geanimeerd. Hoe schrijf ik deze images responsive in de html?
-  
-  - In de footer heeft ben & jerry's een dropdown met vlaggen. Moeten deze in een ordered list of unordered list?
 
 
   ### Verslag van meeting

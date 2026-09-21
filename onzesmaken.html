@@ -13,8 +13,9 @@
 </head>
 
 <body>
+    <a href="#main">Ga naar de hoofdinhoud</a>
     <header>
-        <h1>Onze smaken</h1>
+        <h1>Onze ijs smaken</h1>
         <a href="./index.html">
         <img src="./images/logo.png"><img>
         </a>
@@ -125,19 +126,31 @@
 					</li>
 
 				</a>
+                <img src="./images/BJmenu.svg" alt="Menu">
+                <img src="./images/BJclose.svg" alt="Close">
+                <img src="./images/BJsearch.svg" alt="Zoeken">
+                <img src="./images/BJclose.svg" alt="Close">
 			</ul>
 
 		</nav>
-
-    </header>
-
-    <main>
-        <section>
+        <!-- Picture code van W3Schools -->
+        <picture>
+            <source media="(min-width:465px)" srcset="BJlandingmobile.jpg">
+            <source media="(min-width:465px)" srcset="landingcloudsmobile.jpg">
+            <source media="(min-width:650px)" srcset="BJlandingrechts.jpg">
+            <source media="(min-width:650px)" srcset="Landingcloudsdesktop.jpg">
+            <img src="./images/BJlandingmobile.jpg" alt="Smaken" style="width:auto;">
+          </picture>
+          <section>
             <article>
                 <h2>Smaken</h2>
                 <p>Wij hebben voor iedereen wel een favoriete Ben & Jerry’s smaak. Van onze klassieker Cookie Dough, onze vegan varianten en nog veel meer fairrukkelijke smaken vol met Chunks en Swirls! Ontdek ze allemaal. Grab a spoon! Heerlijk voor op de bank, als dessert of onderweg.</p>
             </article>
         </section>
+
+    </header>
+
+    <main>
 
         <!-- Filter functie en searchbar -->
 
@@ -176,7 +189,7 @@
 
         <!-- Vanaf hier de smaken -->
         
-        <section>
+        <section id="ijspints">
             <article>
                 <h2>Ijspints</h2>
                 <a href="./onzesmaken.html">Alles bekijken</a>
@@ -216,31 +229,111 @@
             </article>
         </section>
 
-        <section>
+        <section id="vegan">
             <article>
-                <h2>Non Diary, Vegan IJs</h2>
+                <h2>Non Dairy, Vegan IJs</h2>
                 <a href="./onzesmaken.html">Alles bekijken</a>
+                <ul>
+                    <li>
+                        <img src="./images/Bohemianraspberry.jpg" alt="Bohemian Raspberry">
+                        <h3>Bohemian Raspberry</h3>
+                        <a href="./onzesmaken.html">Nu kopen</a>
+                    </li>
+                    <li>
+                        <img src="./images/Cookiesoncookiedough.jpg" alt="Cookies on Cookie Dough">
+                        <h3>Cookies on Cookie Dough</h3>
+                        <a href="./onzesmaken.html">Nu kopen</a>
+                    </li>
+                    <li>
+                        <img src="./images/IJSpintscups.jpg" alt="Non Dairy, Vegan ijs">
+                        <h3>Non Dairy, Vegan IJs</h3>
+                        <a href="./onzesmaken.html">Alles bekijken</a>
+                    </li>
+                </ul>
             </article>
         </section>
 
-        <section>
+        <section id="bites">
             <article>
                 <h2>Ice Cream Bites</h2>
                 <a href="./onzesmaken.html">Alles bekijken</a>
+                <ul>
+                    <li>
+                        <img src="./images/Brookiesbites.jpg" alt="Brookies & Cream Peaces Bites">
+                        <h3>Brookies & Cream Peaces</h3>
+                        <a href="./onzesmaken.html">Nu kopen</a>
+                    </li>
+                    <li>
+                        <img src="./images/Chocolatechipscookiedoughbites.jpg" alt="Chocolate Chip Cookie Dough Bites">
+                        <h3>Chocolate Chip Cookie Dough Chunks</h3>
+                        <a href="./onzesmaken.html">Nu kopen</a>
+                    </li>
+                    <li>
+                        <img src="./images/Cookiedoughbites.jpg" alt="Cookie Dough Bites">
+                        <h3>Cookie Dough Peaces</h3>
+                        <a href="./onzesmaken.html">Nu kopen</a>
+                    </li>
+                    <li>
+                        <img src="./images/IJSpintscups.jpg" alt="Ice cream bites">
+                        <h3>Ice Cream Bites</h3>
+                        <a href="./onzesmaken.html">Alles bekijken</a>
+                    </li>
+                </ul>
             </article>
         </section>
 
-        <section>
+        <section id="minicups">
             <article>
                 <h2>Mini Cups IJs</h2>
                 <a href="./onzesmaken.html">Alles bekijken</a>
+                <ul>
+                    <li>
+                        <h3>Caramel Chew Chew</h3>
+                        <a href="./onzesmaken.html">Nu kopen</a>
+                    </li>
+                    <li>
+                        <h3>Chocolate Fudge Brownie</h3>
+                        <a href="./onzesmaken.html">Nu kopen</a>
+                    </li>
+                    <li>
+                        <h3>Classic Cool-lection</h3>
+                        <a href="./onzesmaken.html">Nu kopen</a>
+                    </li>
+                    <li>
+                        <h3>Cookie Dough</h3>
+                        <a href="./onzesmaken.html">Nu kopen</a>
+                    </li>
+                    <li>
+                        <img src="./images/IJSpintscups.jpg" alt="Mini Cups IJs">
+                        <h3>Mini cups ijs</h3>
+                        <a href="./onzesmaken.html">Alles bekijken</a>
+                    </li>
+                </ul>
             </article>
         </section>
 
-        <section>
+        <section id="sundaes">
             <article>
                 <h2>Sundaes</h2>
                 <a href="./onzesmaken.html">Alles bekijken</a>
+                <ul>
+                    <li>
+                        <h3>Cookie Vermont-ster</h3>
+                        <a href="./onzesmaken.html">Nu kopen</a>
+                    </li>
+                    <li>
+                        <h3>Dulce De-lish</h3>
+                        <a href="./onzesmaken.html">Nu kopen</a>
+                    </li>
+                    <li>
+                        <h3>Marshmellow & S'more</h3>
+                        <a href="./onzesmaken.html">Nu kopen</a>
+                    </li>
+                    <li>
+                        <h3>Sundaes</h3>
+                        <a href="./onzesmaken.html">Alles bekijken</a>
+                    </li>
+                </ul>
             </article>
         </section>
 
