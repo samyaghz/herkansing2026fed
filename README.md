@@ -148,17 +148,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik moet nog best veel doen aan de css, en er is veel wat ik nog lastig vind. Ik merk aan mezelf dat ik van beneden naar boven werk in de css, wat niet zo handig is. Dit moet ik in de komende weken verbeteren.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  
+  Mijn vragen:
+  
+  - Voor de derde section heb ik nu display flex gebruikt. Hoe krijg ik de items net als op de echte ben en jerry's website? Kan ik beter display grid gebruiken?
+  - Hoe maak ik binnen in mijn nav nog een drop-down?
+  - In mijn footer heb ik een drop-down met vlaggen van verschillende landen. Hoe krijg ik de vlaggetjes in de drop-down?
+  - Hoe werk ik de witruimtes tussen sections weg?
+  - In de footer heb ik een input type email, hoe zet ik dat pijltje in de button?
 
 
   ### Verslag van meeting

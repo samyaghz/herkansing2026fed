@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Samya El Ghazi">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Startpagina Ben & Jerry's</title>
@@ -18,40 +18,43 @@
 	<header id="header">
 		<h1>Welkom bij de website van Ben & Jerry's</h1>
 		<a href="./index.html">
-			<img src="./images/logo.png" alt="Ben & Jerry's logo">
-		</a>
+				<img src="./images/logo.png" alt="Ben & Jerry's logo, ga naar home">
+			</a>
 		<nav>
+
+			<form action="./index.html">
+				<input type="text" placeholder="Search Our Website" name="search">
+			  </form>
+			
 			<ul>
 					<li>
-						<a href="./onzesmaken.html">Smaken</a> 
-					</li>
-				
-					<li>
-						<a href="./onzesmaken.html">Onze smaken</a> 
-					</li>
-				
-					<li>
-						<a href="#">Ijs Pints</a> 
-					</li>
-				
-					<li>
-						<a href="#">Non-Dairy, Vegan Ijs</a> 
-					</li>
-				
-					<li>
-						<a href="#">Ice Cream Bites</a> 
-					</li>
-				
-					<li>
-						<a href="#">Mini Cups IJs</a> 
-					</li>
-				
-					<li>
-						<a href="#">Sundaes</a> 
-					</li>
-				
-					<li>
-						<a href="#">Flavour Graveyard</a> 
+						
+						<details>
+							<summary>Smaken</summary>
+							<ul>
+								<li>
+									<a href="./onzesmaken.html">Onze smaken</a>
+								</li>
+								<li>
+									<a href="./onzesmaken.html">IJs Pints</a>
+								</li>
+								<li>
+									<a href="./onzesmaken.html">Non-Dairy, Vegan IJs</a>
+								</li>
+								<li>
+									<a href="./onzesmaken.html">Ice cream Bites</a>
+								</li>
+								<li>
+									<a href="./onzesmaken.html">Mini Cups IJs</a>
+								</li>
+								<li>
+									<a href="./onzesmaken.html">Sundaes</a>
+								</li>
+								<li>
+									<a href="./onzesmaken.html">Flavour Graveyard</a>
+								</li>
+							</ul>
+						</details>
 					</li>
 				
 					<li>
@@ -59,58 +62,89 @@
 					</li>
 				
 					<li>
-						<a href="#">Activisme</a> 
-					</li>
-				
-					<li>
-						<a href="#">Overzicht</a> 
-					</li>
-				
-					<li>
-						<a href="#">Onderwerpen die wij belangrijk vinden</a> 
+						<details>
+							<summary>Activisme</summary>
+							<ul>
+								<li>
+									<a href="#">Overzicht</a>
+								</li>
+								<li>
+									<a href="#">Onderwerpen die wij belangrijk vinden</a>
+								</li>
+							</ul>
+						</details>
 					</li>
 		
 					<li>
-						<a href="#">Over Ben & Jerry's</a> 
-					</li>
-				
-					<li>
-						<a href="#">Overzicht</a> 
-					</li>
-				
-					<li>
-						<a href="#">Onze structuur</a> 
-					</li>
-				
-					<li>
-						<a href="#">Hoe wij onze ijs maken</a> 
-					</li>
-				
-					<li>
-						<a href="#">Smaak Goeroes</a> 
-					</li>
-				
-					<li>
-						<a href="#">Waar we zaken doen</a> 
-					</li>
-				
-					<li>
-						<a href="#">IJsfabriek Hellendoorn</a> 
+						<details>
+							<summary>Over Ben & Jerry’s</summary>
+							<ul>
+								<li>
+									<a href="#">Overzicht</a>
+								</li>
+								<li>
+									<a href="#">Onze structuur</a>
+								</li>
+								<li>
+									<a href="#">Hoe wij ons ijs maken</a>
+								</li>
+								<li>
+									<a href="#">Smaak Goeroes</a>
+								</li>
+								<li>
+									<a href="#">Waar we zaken doen</a>
+								</li>
+								<li>
+									<a href="#">IJsfabriek Hellendoorn</a>
+								</li>
+							</ul>
+						</details>
 					</li>
 
 					<li>
 						<a href="#">Nieuwtjes</a> 
 					</li>
+					<li>
+						<a href="#">Neem contact met ons op</a>
+					</li>
+
+					<button aria-hidden="true">
+					    <svg width="800px" height="800px" viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><line x1="7.68" y1="32" x2="56.32" y2="32"/><line x1="7.68" y1="15.97" x2="56.32" y2="15.97"/><line x1="7.68" y1="48.03" x2="56.32" y2="48.03"/></svg>
+					</button>
+
+					<!-- Vragen of de svg's relevant zijn voor de screenreader!! -->
+
+					<svg width="800px" height="800px" viewbox="0 0 1024 1024" fill="#000000" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M176.662 817.173c-8.19 8.471-7.96 21.977 0.51 30.165 8.472 8.19 21.978 7.96 30.166-0.51l618.667-640c8.189-8.472 7.96-21.978-0.511-30.166-8.471-8.19-21.977-7.96-30.166 0.51l-618.666 640z" fill="" /><path d="M795.328 846.827c8.19 8.471 21.695 8.7 30.166 0.511 8.471-8.188 8.7-21.694 0.511-30.165l-618.667-640c-8.188-8.471-21.694-8.7-30.165-0.511-8.471 8.188-8.7 21.694-0.511 30.165l618.666 640z" fill="" /></svg>
+					
+
 
 				
-				<img src="./images/BJmenu.svg" alt="Menu">
+				<!-- <img src="./images/BJmenu.svg" alt="Menu">
                 <img src="./images/BJclose.svg" alt="Close">
                 <img src="./images/BJsearch.svg" alt="Zoeken">
-				<img src="./images/BJclose.svg" alt="Close">
+				<img src="./images/BJclose.svg" alt="Close"> -->
 			</ul>
 
 		</nav>
-		<img src="./images/LaatjehorenBJ.jpg" alt="Kinderpardon Nederland"><img>
+		<!-- <picture>
+			<source media="(min-width: 38.5em)" srcset="./images/LaatjehorenBJ.jpg">
+			<img src="./images/LaatjehorenBJ.jpg" alt="Kinderpardon Nederland">
+		</picture>
+
+		<picture>
+			<source media="(min-width: 57.5em)" srcset="./images/LaatjehorenBJdesktop.jpg">
+			<img src="./images/LaatjehorenBJdesktop.jpg" alt="Kinderpardon Nederland">
+		</picture> -->
+
+		<picture>
+			<source media="(min-width: 68em)" srcset="./images/LaatjehorenBJdesktop.jpg">
+			<source media="(min-width: 57.5em)" srcset="./images/LaatjehorenBJ.jpg">
+			<source media="(min-width: 38.5em)" srcset="./images/LaatjehorenBJ.jpg">
+			<img src="./images/LaatjehorenBJ.jpg" alt="Kinderpardon Nederland">
+		</picture>
+
+		
+		
 		<h2>Laat je horen voor kinderen die hier horen!</h2>
 		<p>
 			400 kinderen wonen al jaren in Nederland, maar weten nog steeds niet of ze mogen blijven. Dat vinden wij
@@ -200,47 +234,68 @@
 
 	</main>
 
+	<!-- <img src="./images/koemegafoon.svg" alt=""> -->
+
 	<footer>
+
+		<img src="./images/koemegafoon.svg" alt="">
+
 		<h3>Meld je aan voor onze nieuwsbrief</h3>
 		<p>Wij zorgen ervoor dat je als eerste op de hoogte bent van nieuwe smaken, fun activiteiten en sociale
 			initiatieven van Ben & Jerry's! Get the scoop!</p>
-		<label for="email">Voer je e-mailadres in</label>
-		<input type="email" id="email" name="email">
-		<button>button</button>
+		<label for="email"></label>
+		<input type="email" id="email" placeholder="Voer je e-mailadres in" name="email">
+		<button class="verzend"><img src="./images/pijltje.svg"></button>
 
 		<h3>Blijf op de hoogte</h3>
 		<a href="./index.html">Stuur ons feedback</a>
 		<a href="./index.html">unsubscribe</a>
 
+		
 		<h3>Volg ons!</h3>
 		<a href="./index.html">
-			<li>
-				Facebook
-			</li>
+			<img src="./images/facebook.svg" alt="facebook">
 		</a>
 		<a href="./index.html">
-			<li>
-				Instagram
-			</li>
+			<img src="./images/instagram.svg" alt="instagram">
 		</a>
 		<a href="./index.html">
-			<li>
-				Tiktok
-			</li>
+			<img src="./images/tiktok.svg" alt="tiktok">
 		</a>
 		<a href="./index.html">
-			<li>
-				X(voormalig Twitter)
-			</li>
+			<img src="./images/twitter.svg" alt="X (voormalig Twitter">
 		</a>
-
+		
 		<h3>Meer informatie</h3>
 		<a href="./index.html">Nieuws</a>
 		<a href="./index.html">Over ons</a>
 
 		<!-- Hier de dropdown met vlaggetjes van andere landen -->
 
-		<ol>
+		<form action="./index.html">
+			<label for="vlaggetjes"><img src="./images/nederlandvlag.jpg" alt="Land selecteren"></label>
+			<select name="vlaggetjes" id="vlaggetjes">
+			  <option value="Nederland">🇳🇱 Nederland</option>
+			  <option value="Australië">🇦🇺 Australië</option>
+			  <option value="Oostenrijk">🇦🇹 Oostenrijk</option>
+			  <option value="België">🇧🇪 België</option>
+			  <option value="Brazilië">🇧🇷 Brazilië</option>
+			  <option value="Canada">🇨🇦 Canada</option>
+			  <option value="Tsjechië">🇨🇿 Tsjechië</option>
+			  <option value="Denemarken">🇩🇰 Denemarken</option>
+			  <option value="Finland">🇫🇮 Finland</option>
+			  <option value="Frankrijk">🇫🇷 Frankrijk</option>
+			  <option value="Duitsland">🇩🇪 Duitsland</option>
+			  <option value="Griekenland">🇬🇷 Griekenland</option>
+			  <option value="Ierland">🇮🇪 Ierland</option>
+			  <option value="Italië">🇮🇹 Italië</option>
+			  <option value="Mexico">🇲🇽 Mexico</option>
+			  <option value="Noorwegen">🇳🇴 Noorwegen</option>
+			</select>
+			
+		  </form>
+
+		<!-- <ol>
             <li>
                 <img src="./images/nederlandvlag.jpg" alt="Nederland">
                 <p>Nederland</p>
@@ -357,7 +412,7 @@
                 <img src="./images/VerenigdeStaten.jpg" alt="Verenigde Staten">
                 <p>Verenigde Staten</p>
             </li>
-        </ol>
+        </ol> -->
 
 		<ul>
 			<li>

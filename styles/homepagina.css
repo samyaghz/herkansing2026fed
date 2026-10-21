@@ -1,0 +1,242 @@
+/* mobile first */
+
+@media (min-width:38em) {
+
+    /* verkooppunten sectie */
+
+    section:first-of-type {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        padding: 1rem .5rem 1rem .5rem;
+    }
+
+    section:first-of-type img {
+        /* width: 25em;
+        height: 16,6875em; */
+        width: 100%;
+        border-radius: 1.5rem;
+    }
+
+    section:first-of-type h2 {
+        font-family: "ChunkRethunk", sans-serif;
+        font-size: 2rem;
+    }
+
+    section:first-of-type h3 {
+        font-family: "ChunkRethunk", sans-serif;
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    section:first-of-type p {
+        font-family: "ProximaNova", sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    section:first-of-type a {
+        font-family: "ProximaNova", sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color:var(--bs-black);
+        text-decoration: none;
+        background-color: var(--bs-yellow);
+        padding: .7rem 2rem .7rem 2rem;
+        border-radius: 6rem;
+        margin-top: 2rem;
+    }
+
+    /* einde verkooppunten */
+
+    /* de doe mee sectie */
+
+    section:nth-of-type(2) {
+        background-color: var(--bs-link-hover-color);
+        padding-bottom: 5rem;
+        /* margin-bottom: 5rem; */
+    }
+
+    section:nth-of-type(2) img {
+        /* width: 27.5em;
+        height: 27.5em; */
+        width: 100%;
+        /* box-sizing: border-box; */
+    }
+
+    section:nth-of-type(2) h2 {
+        font-family: "ChunkRethunk";
+        color: var(--bs-white);
+        font-size: 2rem;
+        padding-left: 2rem;
+    }
+
+    section:nth-of-type(2) p {
+        font-family: "ProximaNova";
+        color: var(--bs-white);
+        font-size: 1.2rem;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    section:nth-of-type(2) a {
+        font-family: "ProximaNova";
+        color: var(--bs-black);
+        font-size: 1.2rem;
+        font-weight: bold;
+        background-color: var(--bs-yellow);
+        text-decoration: none;
+        padding: .7rem 2rem .7rem 2rem;
+        border-radius: 6rem;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+
+    /* einde doe mee sectie */
+
+    /* derde section: topverhalen */
+
+    section:nth-of-type(3) ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin:0;
+        padding: 0;
+        margin-bottom: 7rem;
+    }
+
+    section:nth-of-type(3) li {
+        /* flex-direction: column; */
+        /* box-sizing: content-box; */
+        /* position: relative; */
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-evenly; */
+    }
+
+    section:nth-of-type(3) h2 {
+        font-family: "ChunkRethunk",sans-serif;
+        font-size: 2rem;
+        padding: 1.5rem 0 0 1.5rem;
+        margin: 1rem 0 0 0;
+    }
+
+    section:nth-of-type(3) img {
+        /* width: 10.8125em;
+        height: 10.8125em; */
+        max-width: 100%;
+        border-radius: .7rem;
+        
+        /* padding: 1rem 1rem 1.5rem 1rem; */
+    }
+
+
+    section:nth-of-type(3) time {
+        font-family: "ProximaNova";
+        font-size: 1.3rem;
+        color: var(--bs-time-gray);
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-weight: 600;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding: 1.5rem 0 1.5rem 0;
+        line-height: 1.5rem;
+    }
+
+    section:nth-of-type(3) h3 {
+        display: block;
+        font-family: "ChunkRethunk";
+        font-size: 1.5rem;
+        white-space: 3rem;
+        line-height: 2.3rem;
+    }
+
+    section:nth-of-type(3) p {
+        font-family: "ProximaNova";
+        display: block;
+        font-size: 1.4rem;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        line-height: 2.3rem;
+    }
+
+    section:nth-of-type(3) a {
+        font-family: "ProximaNova";
+        color: var(--bs-link-color);
+        font-size: 1.3rem;
+    }
+
+    /* einde derde section */
+
+    /* start blauwe info section */
+
+    section:nth-of-type(4) {
+        background-color: var(--bs-informatie);
+        display: grid;
+    }
+
+
+    section:nth-of-type(4) img {
+        width: 4.0619em;
+        height: 4.1388em;
+        grid-column: 1;
+        grid-row: 1/-1;
+        padding: 0.5em 0.5em 0 0;
+        
+    }
+    
+    section:nth-of-type(4) h2 {
+        font-family: "ChunkRethunk";
+        color: var(--bs-black);
+        padding: 1.5em 1em 1.5em 1em;
+    }
+
+    section:nth-of-type(4) ul {
+        padding-bottom: 5em;
+    }
+
+    section:nth-of-type(4) ul li {
+        display: grid;
+        grid-template-columns:5em 1fr ;
+        grid-template-rows: min-content min-content min-content;
+        font-size: 1.5em;
+        padding-bottom: 3.5em;
+        padding-left: 0;
+        padding-right: .5em;
+    }
+    
+    section:nth-of-type(4) ul li h3 {
+        font-family: "ChunkRethunk", sans-serif;
+        grid-column: 2;
+        padding: 0;
+        margin: 0;
+    }
+    
+    section:nth-of-type(4) ul li p {
+        font-family: "ProximaNova", sans-serif;
+        padding: 0 0 .2em 0;
+        margin: 0;
+    }
+    
+    section:nth-of-type(4) ul li a {
+        font-family: "ProximaNova", sans-serif;
+        color: var(--bs-link-color);
+        grid-row: 3;
+        grid-column: 2;
+        padding: 0.2em 0 1em 0;
+    }
+
+    /* einde blauwe info section */
+}
+
+
+/* iPad */
+@media (min-width:57em) {}
+
+/* Desktop */
+@media (min-width:68em) {}
+

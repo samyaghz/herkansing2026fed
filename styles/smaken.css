@@ -1,0 +1,457 @@
+@media (min-width:38em) {
+
+    /* eerste section */
+
+    /* header section:first-of-type article {
+        background-color: none;
+    }
+
+    header picture {
+        background-color: var(--bs-achtergrond-ijswolk);
+        width: 100%;
+        height: 100%;
+    } */
+
+    header section article picture {
+        background-color: var(--bs-achtergrond-ijswolk);
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Categorie filter */
+
+    main section:first-of-type ul li details summary {
+        border: .15rem solid;
+        padding: 1.5rem 1rem 1.5rem 2rem;
+        
+        border-radius: .5rem;
+    }
+
+    main section:first-of-type ul li details summary::after {
+        content: url(../images/pijltjenaarbeneden.svg);
+        /* display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap; */
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    main section:first-of-type ul li details summary:active {
+        text-decoration: underline;
+        border-style: solid;
+        border-width: .3rem;
+        border-color: var(--bs-link-hover-color);
+    }
+
+    main section:first-of-type ul li details ul {
+        border: .1rem solid;
+        border-color: var(--bs-gray-500);
+        border-radius: .3rem;
+        /* display: grid; */
+    }
+
+    main section:first-of-type ul li details ul li a img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    /* main section:first-of-type ul li details ul li {
+        
+    } */
+
+    /* de smaken */
+
+    #ijspints article ul {
+        display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    gap: 2rem;
+	    /* padding: 1em; */
+	    margin: 0;
+        width: 100%;
+        height: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    #ijspints article li {
+        
+        /* grid-template-columns: 1fr 1fr; */
+        /* position: relative; */
+        /* width: 100%;
+        height: 100%; */
+        gap: 3rem;
+        padding: 1rem;
+        align-items: center;
+
+    }
+
+    #ijspints article h2 {
+        font-family: "ChunkRethunk", sans-serif;
+        font-size: 1.5rem;
+        color:var(--bs-black);
+        padding-left: 3rem;
+        margin: 0;
+
+    }
+
+    #ijspints article h3 {
+        font-family: "ChunkRethunk", sans-serif;
+    }
+
+    #ijspints article li a {
+        font-family: "ProximaNova", sans-serif;
+        text-decoration: none;
+        color: var(--bs-black);
+        border: solid;
+        border-width: thin;
+        border-color: var(--bs-black);
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        border-radius: 3rem;
+    }
+
+    #ijspints article>a:first-of-type {
+        font-family: "ProximaNova", sans-serif;
+        color: var(--bs-link-color);
+        
+        justify-content: space-between;
+    }
+
+    #ijspints ul li img {
+        /* width: 10.8125em;
+        height: 10.8125em; */
+        max-width: 100%;
+        background-color: var(--bs-achtergrond-smaken);
+        border-radius: 1.5rem;
+        /* margin: .3em .3em .3em .3em; */
+        padding: 1em;
+    }
+
+    /* vegan ijs */
+
+    #vegan article ul {
+        display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    gap: 2rem;
+	    /* padding: 1em; */
+	    margin: 0;
+        width: 100%;
+        height: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    #vegan article li {
+        
+        /* grid-template-columns: 1fr 1fr; */
+        /* position: relative; */
+        /* width: 100%;
+        height: 100%; */
+        gap: 3rem;
+        padding: 1rem;
+        align-items: center;
+
+    }
+
+    #vegan article h2 {
+        font-family: "ChunkRethunk", sans-serif;
+        font-size: 1.5rem;
+        color:var(--bs-black);
+        
+
+    }
+
+    #vegan article h3 {
+        font-family: "ChunkRethunk", sans-serif;
+    }
+
+    #vegan article li a {
+        font-family: "ProximaNova", sans-serif;
+        text-decoration: none;
+        color: var(--bs-black);
+        border: solid;
+        border-width: thin;
+        border-color: var(--bs-black);
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        border-radius: 3rem;
+    }
+
+    #vegan article>a:first-of-type {
+        font-family: "ProximaNova", sans-serif;
+        color: var(--bs-link-color);
+        
+        justify-content: space-between;
+    }
+
+    #vegan ul li img {
+        /* width: 10.8125em;
+        height: 10.8125em; */
+        max-width: 100%;
+        background-color: var(--bs-achtergrond-smaken);
+        border-radius: 1.5rem;
+        /* margin: .3em .3em .3em .3em; */
+        padding: 1em;
+    }
+
+    /* bites */
+
+    #bites article ul {
+        display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    gap: 2rem;
+	    /* padding: 1em; */
+	    margin: 0;
+        width: 100%;
+        height: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    #bites article li {
+        
+        /* grid-template-columns: 1fr 1fr; */
+        /* position: relative; */
+        /* width: 100%;
+        height: 100%; */
+        gap: 3rem;
+        padding: 1rem;
+        align-items: center;
+
+    }
+
+    #bites article h2 {
+        font-family: "ChunkRethunk", sans-serif;
+        font-size: 1.5rem;
+        color:var(--bs-black);
+        
+
+    }
+
+    #bites article h3 {
+        font-family: "ChunkRethunk", sans-serif;
+    }
+
+    #bites article li a {
+        font-family: "ProximaNova", sans-serif;
+        text-decoration: none;
+        color: var(--bs-black);
+        border: solid;
+        border-width: thin;
+        border-color: var(--bs-black);
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        border-radius: 3rem;
+    }
+
+    #bites article>a:first-of-type {
+        font-family: "ProximaNova", sans-serif;
+        color: var(--bs-link-color);
+        
+        justify-content: space-between;
+    }
+
+    #bites ul li img {
+        /* width: 10.8125em;
+        height: 10.8125em; */
+        max-width: 100%;
+        background-color: var(--bs-achtergrond-smaken);
+        border-radius: 1.5rem;
+        /* margin: .3em .3em .3em .3em; */
+        padding: 1em;
+    }
+
+    /* minicups */
+
+    #minicups article ul {
+        display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    gap: 2rem;
+	    /* padding: 1em; */
+	    margin: 0;
+        width: 100%;
+        height: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    #minicups article li {
+        
+        /* grid-template-columns: 1fr 1fr; */
+        /* position: relative; */
+        /* width: 100%;
+        height: 100%; */
+        gap: 3rem;
+        padding: 1rem;
+        align-items: center;
+
+    }
+
+    #minicups article h2 {
+        font-family: "ChunkRethunk", sans-serif;
+        font-size: 1.5rem;
+        color:var(--bs-black);
+        
+
+    }
+
+    #minicups article h3 {
+        font-family: "ChunkRethunk", sans-serif;
+    }
+
+    #minicups article li a {
+        font-family: "ProximaNova", sans-serif;
+        text-decoration: none;
+        color: var(--bs-black);
+        border: solid;
+        border-width: thin;
+        border-color: var(--bs-black);
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        border-radius: 3rem;
+    }
+
+    #minicups article>a:first-of-type {
+        font-family: "ProximaNova", sans-serif;
+        color: var(--bs-link-color);
+        
+        justify-content: space-between;
+    }
+
+    #minicups ul li img {
+        /* width: 10.8125em;
+        height: 10.8125em; */
+        max-width: 100%;
+        background-color: var(--bs-achtergrond-smaken);
+        border-radius: 1.5rem;
+        /* margin: .3em .3em .3em .3em; */
+        padding: 1em;
+    }
+
+    /* sundaes */
+
+    #sundaes article ul {
+        display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    gap: 2rem;
+	    /* padding: 1em; */
+	    margin: 0;
+        width: 100%;
+        height: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    #sundaes article li {
+        
+        /* grid-template-columns: 1fr 1fr; */
+        /* position: relative; */
+        /* width: 100%;
+        height: 100%; */
+        gap: 3rem;
+        padding: 1rem;
+        align-items: center;
+
+    }
+
+    #sundaes article h2 {
+        font-family: "ChunkRethunk", sans-serif;
+        font-size: 1.5rem;
+        color:var(--bs-black);
+        
+
+    }
+
+    #sundaes article h3 {
+        font-family: "ChunkRethunk", sans-serif;
+    }
+
+    #sundaes article li a {
+        font-family: "ProximaNova", sans-serif;
+        text-decoration: none;
+        color: var(--bs-black);
+        border: solid;
+        border-width: thin;
+        border-color: var(--bs-black);
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        border-radius: 3rem;
+    }
+
+    #sundaes article>a:first-of-type {
+        font-family: "ProximaNova", sans-serif;
+        color: var(--bs-link-color);
+        
+        justify-content: space-between;
+    }
+
+    #sundaes ul li img {
+        /* width: 10.8125em;
+        height: 10.8125em; */
+        max-width: 100%;
+        background-color: var(--bs-achtergrond-smaken);
+        border-radius: 1.5rem;
+        /* margin: .3em .3em .3em .3em; */
+        padding: 1em;
+    }
+
+    /* de video */
+
+    iframe {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    
+
+    /* Blauwe info sectie */
+
+    section:last-of-type {
+        background-color: var(--bs-informatie);
+        display: grid;
+    }
+
+
+    section:last-of-type img {
+        width: 4.0619em;
+        height: 4.1388em;
+        grid-column: 1;
+        grid-row: 1/-1;
+        padding: 0.5em 0.5em 0 0;
+        
+    }
+    
+    section:last-of-type h2 {
+        font-family: "ChunkRethunk";
+        color: var(--bs-black);
+        padding: 1.5em 1em 1.5em 1em;
+    }
+
+    section:last-of-type ul li {
+        display: grid;
+        grid-template-columns:5em 1fr ;
+        grid-template-rows: min-content min-content min-content;
+        font-size: 1.5em;
+        padding-bottom: 1em;
+        padding-left: 0;
+        padding-right: .2em;
+    }
+    
+    section:last-of-type ul li h3 {
+        font-family: "ChunkRethunk", sans-serif;
+        grid-column: 2;
+        padding: 0;
+        margin: 0;
+    }
+    
+    section:last-of-type ul li p {
+        font-family: "ProximaNova", sans-serif;
+        padding: 0 0 .2em 0;
+        margin: 0;
+    }
+    
+    section:last-of-type ul li a {
+        font-family: "ProximaNova", sans-serif;
+        color: var(--bs-link-color);
+        grid-row: 3;
+        grid-column: 2;
+        padding: 0.2em 0 1em 0;
+    }
+
+    /* einde blauwe info section */
+}
