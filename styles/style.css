@@ -13,6 +13,7 @@ html, body {
 
 ul {
   margin: 0;
+  padding: 0;
 }
 
 
@@ -102,6 +103,7 @@ h1 {
 
 header > a:first-of-type {
   z-index:1000;
+  object-fit: fill;
 }
 /* Zodat het logo blijf staan bij het uitklappen */
 
@@ -205,6 +207,10 @@ nav details ul li a:active {
     /* height: 18.3125em; */
 }
 
+/* img {
+  width: 100%;
+} */
+
 header h2 {
     display: block;
     font-family: "ChunkRethunk", sans-serif;
@@ -265,8 +271,10 @@ details ul li a {
 }
 
 
-
+/* een class gebruikt voor de verzend knop in de footer, zodat deze als enige zo gestyled wordt*/
 .verzend {
+  /* display: flex;
+  align-items: center; */
   background-color: var(--bs-warning);
   left: 0;
   padding: 1.3rem 1rem 1.3rem 1rem;
@@ -277,59 +285,175 @@ details ul li a {
 }
 
 footer {
-  padding: 0rem 1.5rem 10rem 1.5rem;
+  padding: 7rem 2.5rem 15rem 2.5rem;
   margin:0;
   background-color: var(--bs-footer-light);
   color: var(--bs-light);
-  position: absolute;
-  
+  /* position: absolute; */
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  /* flex-wrap: wrap;
+  align-items: center; */
+  gap: 1rem;
   
 }
 
+
+
 footer h3 {
   font-family: "ChunkRethunk";
-  font-size: 1.5em;
-  padding-top: 0;
-  margin-top: 0;
+  font-size: 2rem;
+  padding-top: 2rem;
+  margin:0;
 }
 
 footer p {
   font-family: "ProximaNova";
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 footer a {
   color: var(--bs-white);
   text-decoration: none;
   font-family: "ProximaNova";
+  font-size: 1.5rem;
 }
 
 footer>img:nth-of-type(1) {
-  position: relative;
-  top: 2rem;
+  position: absolute;
+  /* top: 2rem; */
   left: 22rem;
   max-width: 12.5rem;
-  transform: translateY(-70%);
+  transform: translateY(-150%);
+  /* transform: translateX(70%); */
   margin: 0;
   padding: 0;
-  border-style: solid;
-  border-color: purple;
+  
+  display: none;
 }
 
-footer a img {
+footer ul:first-of-type {
+  display: flex;
+}
+
+footer ul:first-of-type li {
+  padding-right: 1rem;
+}
+
+footer ul:first-of-type li a img {
   /* position: absolute; */
   margin: 0;
   padding: 0;
-  /* display: flex; */
-  border-style: solid;
-  border-color: purple;
+  flex-direction: row;
+  list-style-type: none;
+  width: 3em;
+  height: 3em;
+  justify-content: center;
+  padding-left: 0;
+  
  
 }
 
+footer input {
+	flex: 1 1 0;
+	min-width: 0;
+  width: 80%;
+	height: 3.5rem;
+	box-sizing: border-box;
+	padding: 0 1.5rem;
+	font-size: 1.1rem;
+	color: #111;
+	background-color: #fff;
+	border: 1px solid #555;
+	border-radius: 0.5rem 0 0 0.5rem;
+	margin-right: -1rem;
+  font-family: "ProximaNova",sans-serif;
+}
 
-@media (min-width:38em) {
+footer input::placeholder {
+	color: var(--color-text);
+	opacity: 1;
+}
 
- 
+footer form select {
+  border: solid 3px;
+  border-color: var(--color-text);
+  border-radius: .5rem;
+  width: 30%;
+  height: 105%;
+  font-size: 1rem;
+}
+
+footer ul:nth-of-type(2) li a {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+
+@media (min-width:57em) {
+
+  footer>img:nth-of-type(1) {
+    display: block;
+    position: absolute;
+  /* top: 2rem; */
+    left: 40rem;
+    max-width: 12.5rem;
+    transform: translateY(-120%);
+  /* transform: translateX(70%); */
+    margin: 0;
+    padding: 0;
+  }
 
   
 
+}
+
+@media (min-width: 68em) {
+	/* header {
+		display: grid;
+		grid-template-columns: minmax(0, 55%) 1fr;
+		grid-template-rows: 1fr auto auto auto 1fr; 
+	}
+
+	
+	header > picture {
+		grid-area: 1 / 1 / -1 / -1;
+	}
+
+	header > picture img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	
+	header > h2,
+	header > p,
+	header > a {
+		grid-column: 1;
+		margin: 0 3rem 0 4rem;
+	}
+
+	header > h2 { grid-row: 2; margin-bottom: 1rem; }
+	header > p  { grid-row: 3; margin-bottom: 1.5rem; }
+
+	header > a {
+		grid-row: 4;
+		justify-self: start; 
+	} */
+
+  footer>img:nth-of-type(1) {
+    display: block;
+    position: absolute;
+  /* top: 2rem; */
+    left: 52rem;
+    max-width: 12.5rem;
+    transform: translateY(-120%);
+  /* transform: translateX(70%); */
+    margin: 0;
+    padding: 0;
+  }
 }

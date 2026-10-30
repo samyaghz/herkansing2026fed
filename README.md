@@ -154,7 +154,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   
   Mijn vragen:
-  
+
   - Voor de derde section heb ik nu display flex gebruikt. Hoe krijg ik de items net als op de echte ben en jerry's website? Kan ik beter display grid gebruiken?
   - Hoe maak ik binnen in mijn nav nog een drop-down?
   - In mijn footer heb ik een drop-down met vlaggen van verschillende landen. Hoe krijg ik de vlaggetjes in de drop-down?
@@ -233,7 +233,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb veel plezier gehad met het stylen van de ben & jerry's website. Het was oprecht leuk om eraan te werken en ik heb veel geleerd over het gebruiken van flexbox en grid.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
