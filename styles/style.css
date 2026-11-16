@@ -11,9 +11,15 @@ html, body {
   overflow-x: hidden;
 }
 
+
+
 ul {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: var(--bs-white);
 }
 
 
@@ -30,44 +36,44 @@ ul {
 	--color-text:#111;
 	--color-background:#eee;
 	--bs-blue: #0d6efd;
-    --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
-    --bs-pink: #d63384;
-    --bs-red: #dc3545;
-    --bs-orange: #fd7e14;
-    --bs-yellow: #ffc107;
-    --bs-green: #198754;
-    --bs-teal: #20c997;
-    --bs-cyan: #0dcaf0;
-    --bs-black: #000;
-    --bs-white: #fff;
-    --bs-gray: #6c757d;
-    --bs-gray-dark: #343a40;
-    --bs-gray-100: #f8f9fa;
-    --bs-gray-200: #e9ecef;
-    --bs-gray-300: #dee2e6;
-    --bs-gray-400: #ced4da;
-    --bs-gray-500: #adb5bd;
-    --bs-gray-600: #6c757d;
-    --bs-gray-700: #495057;
-    --bs-gray-800: #343a40;
-    --bs-gray-900: #212529;
-    --bs-secondary: #6c757d;
-    --bs-time-gray: #595959;
-    --bs-success: #538547;
-    --bs-info: #0dcaf0;
-    --bs-warning: #ffbc0e;
-    --bs-danger: #D13239;
-    --bs-light: #f8f9fa;
-    --bs-dark: #212529;
-    --bs-footer-light: #2a5729;
-    --bs-informatie: #c4e7f3;
-    --bs-link-color: #002f87;
-    --bs-link-hover-color: #001d54;
-    --bs-code-color: #d63384;
-    --bs-highlight-bg: #fff3cd;
-    --bs-achtergrond-smaken: #e8f9ff;
-    --bs-achtergrond-ijswolk: #375d9d;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-secondary: #6c757d;
+  --bs-time-gray: #595959;
+  --bs-success: #538547;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffbc0e;
+  --bs-danger: #D13239;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-footer-light: #2a5729;
+  --bs-informatie: #c4e7f3;
+  --bs-link-color: #002f87;
+  --bs-link-hover-color: #001d54;
+  --bs-code-color: #d63384;
+  --bs-highlight-bg: #fff3cd;
+  --bs-achtergrond-smaken: #e8f9ff;
+  --bs-achtergrond-ijswolk: #375d9d;
 }
 
 @font-face {
@@ -78,6 +84,91 @@ ul {
 @font-face {
   font-family: "ProximaNova";
   src: url(../fonts/proxima-nova.woff2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #f8f9fa;
+    --color-background: #17191c;
+
+    --bs-blue: #6ea8fe;
+    --bs-indigo: #6610f2;
+    --bs-purple: #a98eda;
+    --bs-pink: #e685b5;
+    --bs-red: #ea868f;
+    --bs-orange: #ffb366;
+    --bs-yellow: #ffc107;
+    --bs-green: #75b798;
+    --bs-teal: #6edcc5;
+    --bs-cyan: #6edff6;
+
+    --bs-black: #000;
+    --bs-white: #fff;
+
+    --bs-gray: #adb5bd;
+    --bs-gray-dark: #ced4da;
+
+    --bs-gray-100: #343a40;
+    --bs-gray-200: #495057;
+    --bs-gray-300: #6c757d;
+    --bs-gray-400: #868e96;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #ced4da;
+    --bs-gray-700: #dee2e6;
+    --bs-gray-800: #e9ecef;
+    --bs-gray-900: #f8f9fa;
+
+    --bs-secondary: #adb5bd;
+    --bs-time-gray: #b8b8b8;
+
+    --bs-success: #75b798;
+    --bs-info: #6edff6;
+    --bs-warning: #ffda6a;
+    --bs-danger: #ea868f;
+
+    --bs-light: #343a40;
+    --bs-dark: #f8f9fa;
+
+    --bs-footer-light: #193b20;
+    --bs-informatie: #244653;
+
+    --bs-link-color: #8bb9ff;
+    --bs-link-hover-color: #b3d1ff;
+
+    --bs-code-color: #e685b5;
+    --bs-highlight-bg: #4d421e;
+
+    --bs-achtergrond-smaken: #192e38;
+    --bs-achtergrond-ijswolk: #243e68;
+  }
+}
+
+nav form {
+  display: flex;
+  justify-content: center;
+  
+}
+
+nav form input {
+  font-family: "ProximaNova", sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  width: 70%;
+  border: solid 2px gray;
+  border-radius: .6rem;
+  align-items: center;
+}
+
+nav form::active {
+  border-style: solid 4px var(--bs-link-hover-color);
+}
+
+main section:first-of-type form input::before {
+  content: url(../images/BJsearch.svg);
+  color: var(--bs-black);
+  width: .2rem;
+  height: .2rem;
 }
 
 	
@@ -104,6 +195,8 @@ h1 {
 header > a:first-of-type {
   z-index:1000;
   object-fit: fill;
+  position: sticky;
+  
 }
 /* Zodat het logo blijf staan bij het uitklappen */
 
@@ -138,12 +231,42 @@ main {
   padding: 0;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  order: -1;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  position:relative;
+  z-index:100;
+}
+
 nav svg {
   width: 3rem;
   height: 3rem;
   display: flex;
-  position:absolute;
+  /* position:absolute; */
   justify-content: flex-end;
+  position:relative;
+  z-index:100;
 }
 
 nav details {
@@ -156,11 +279,20 @@ nav details summary::after {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: space-between;
+}
+
+nav details li a {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* code van StackOverflow, om de arrows te verbergen */
 details > summary {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
 }
 
 details > summary::-webkit-details-marker {
@@ -170,7 +302,46 @@ details > summary::-webkit-details-marker {
 
 nav ul li>a::after {
   content: url(../images/pijltje.svg);
-  width: 3rem;
+  left: 3rem;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  nav ul {
+    background-color: var(--bs-black);
+  }
+
+  details > summary {
+    color: var(--bs-white);
+  }
+
+  nav details ul li a {
+    color: var(--bs-white);
+  }
+
+  /* iconen kleur veranderen */
+  nav ul li>a::after {
+    filter: invert();               /* code van https://css-tricks.com/almanac/functions/i/invert/ */
+  }
+
+  nav details summary::after {
+     filter: invert();             /* code van https://css-tricks.com/almanac/functions/i/invert/ */
+  }
+
+  nav button svg {
+    filter: invert();              /* code van https://css-tricks.com/almanac/functions/i/invert/ */
+  }
+
+  nav form {
+    background-color: var(--bs-black);
+    border: none;
+    
+  }
+}
+
+nav ul li>a {
+  display: flex;
+  justify-content: space-between;
 }
 
 nav details summary:active {
@@ -251,6 +422,10 @@ ul li {
 	list-style-type: none;
 }
 
+nav {
+  order: -1;
+}
+
 nav ul li a {
   font-family: "ChunkRethunk", sans-serif;
   color: var(--bs-black);
@@ -270,18 +445,48 @@ details ul li a {
   text-decoration: none;
 }
 
+footer form {
+  display: flex;
+  max-width: 90%;
+}
+
+footer form input {
+	flex: 1 1 0;
+	min-width: 0;
+  width: 60%;
+	height: 3.5rem;
+	box-sizing: border-box;
+	padding: 0 1rem;
+	font-size: 1.1rem;
+	color: var(--bs-black);
+	background-color: var(--bs-white);
+	border: 1px solid var(--bs-gray-600);
+	border-radius: 0.5rem 0 0 0.5rem;
+	margin-right: -1rem;
+  font-family: "ProximaNova",sans-serif;
+  flex: 1;
+	min-width: 0;
+	margin-right: 0;
+}
+
+footer form input::placeholder {
+	color: var(--color-text);
+	opacity: 1;
+}
 
 /* een class gebruikt voor de verzend knop in de footer, zodat deze als enige zo gestyled wordt*/
-.verzend {
+form .verzend {
   /* display: flex;
   align-items: center; */
   background-color: var(--bs-warning);
   left: 0;
-  padding: 1.3rem 1rem 1.3rem 1rem;
+  padding: 1.3rem 1rem 1rem 1rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   border-style: none;
-
+	background-color: var(--bs-warning);
+  /* grid-column: 2; */
+  grid-column: 1;
 }
 
 footer {
@@ -323,11 +528,9 @@ footer a {
 
 footer>img:nth-of-type(1) {
   position: absolute;
-  /* top: 2rem; */
   left: 22rem;
   max-width: 12.5rem;
   transform: translateY(-150%);
-  /* transform: translateX(70%); */
   margin: 0;
   padding: 0;
   
@@ -343,7 +546,6 @@ footer ul:first-of-type li {
 }
 
 footer ul:first-of-type li a img {
-  /* position: absolute; */
   margin: 0;
   padding: 0;
   flex-direction: row;
@@ -354,27 +556,6 @@ footer ul:first-of-type li a img {
   padding-left: 0;
   
  
-}
-
-footer input {
-	flex: 1 1 0;
-	min-width: 0;
-  width: 80%;
-	height: 3.5rem;
-	box-sizing: border-box;
-	padding: 0 1.5rem;
-	font-size: 1.1rem;
-	color: #111;
-	background-color: #fff;
-	border: 1px solid #555;
-	border-radius: 0.5rem 0 0 0.5rem;
-	margin-right: -1rem;
-  font-family: "ProximaNova",sans-serif;
-}
-
-footer input::placeholder {
-	color: var(--color-text);
-	opacity: 1;
 }
 
 footer form select {
@@ -411,6 +592,11 @@ footer ul:nth-of-type(2) li a {
 }
 
 @media (min-width: 68em) {
+
+  nav {
+    order: -1;
+  }
+
 	/* header {
 		display: grid;
 		grid-template-columns: minmax(0, 55%) 1fr;
@@ -448,12 +634,36 @@ footer ul:nth-of-type(2) li a {
   footer>img:nth-of-type(1) {
     display: block;
     position: absolute;
-  /* top: 2rem; */
     left: 52rem;
     max-width: 12.5rem;
     transform: translateY(-120%);
-  /* transform: translateX(70%); */
     margin: 0;
     padding: 0;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+
+  footer>h3,p,a {
+    color: var(--bs-white);
+  }
+
+  body {
+    background-color: var(--bs-black);
+  }
+
+  h2, h3 {
+    color: var(--bs-white);
+  }
+
+  nav {
+    background-color: var(--bs-white);
+  }
+
+  footer form input::placeholder {
+    color: var(--bs-black);
+  }
+
+
+}
+

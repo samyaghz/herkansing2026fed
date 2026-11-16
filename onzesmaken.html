@@ -11,7 +11,6 @@
     <link href="./styles/style.css" rel="stylesheet">
     <link href="./styles/smaken.css" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="./images/faviiconbj.svg">
-    <!-- <link rel="icon" type="image/svg+xml" href="images/favicon.svg"> -->
 </head>
 
 <body>
@@ -22,6 +21,11 @@
             <img src="./images/logo.png" alt="Ben & Jerry's logo, ga naar home">
         </a>
         <nav>
+
+            <form action="./index.html">
+                <label for="Search"></label>
+				<input type="text" placeholder="Search Our Website" name="search">
+			</form>
 
             <ul>
                 <li>
@@ -281,12 +285,15 @@
             <article>
                 <picture>
                     <source media="(min-width:38.5em)" srcset="./images/BJlandingdesktop.jpg">
-                    <img src="./images/BJlandingmobile.jpg" alt="Smaken">
+                    <source media="(min-width: 57.5em)" srcset="./images/BJlandingdesktop.jpg">
+                    <source media="(min-width: 68em)" srcset="./images/BJlandingrechts.jpg">
+                    <img src="./images/BJlandingmobile.jpg" alt="de smaken">
+
                 </picture>
-                
+
                 <picture>
                     <source media="(min-width:38.5em)" srcset="./images/landingcloudsdesktop.jpg">
-                    <img src="./images/landingcloudsmobile.jpg" alt="">
+                    <img src="./images/landingcloudsmobile.jpg" alt="Smaken">
                 </picture>
                 <h2>Smaken</h2>
                 <p>Wij hebben voor iedereen wel een favoriete Ben & Jerry’s smaak. Van onze klassieker Cookie Dough,
@@ -302,8 +309,11 @@
         <!-- Filter functie en searchbar -->
 
         <section>
-            <label for="search">Search all our flavors</label>
-            <input type="search">
+            <form action="">
+                <label for="search"></label>
+                <input type="search" placeholder="Search all our flavors">
+            </form>
+            
 
             <ul>
                 <li>
@@ -312,44 +322,44 @@
                         <ul>
                             <li>
                                 <a href="#ijspints">
-                                    <img src="./images/ijspints.avif"><img>
+                                    <img src="./images/ijspints.avif" alt="ijspints">
                                     <p>Ijspints</p>
                                 </a>
                             </li>
 
-                            
+
                             <li>
                                 <a href="#vegan">
-                                    <img src="./images/nondiaryveganijs.avif"><img>
+                                    <img src="./images/nondiaryveganijs.avif" alt="non dairy en vegan ijs">
                                     <p>Non Dairy, Vegan IJs</p>
                                 </a>
                             </li>
 
-                            
+
                             <li>
                                 <a href="#bites">
-                                    <img src="./images/icecreambites.avif"><img>
+                                    <img src="./images/icecreambites.avif" alt="ice cream bites">
                                     <p>Ice cream bites</p>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#ijspints">
-                                    <img src="./images/ijspints.avif"><img>
+                                    <img src="./images/ijspints.avif" alt="lighten up">
                                     <p>Lighten Up!</p>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#minicups">
-                                    <img src="./images/minicups.avif"><img>
+                                    <img src="./images/minicups.avif" alt="minicups ijs">
                                     <p>Mini Cups IJs</p>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#sundaes">
-                                    <img src="./images/sundaes.avif"><img>
+                                    <img src="./images/sundaes.avif" alt="sundaes">
                                     <p>Sundaes</p>
                                 </a>
                             </li>
@@ -473,17 +483,17 @@
                         <a href="./onzesmaken.html">Nu kopen</a>
                     </li>
                     <li>
-                        <img src="./images/classiccoollection.jpg" alt="">
+                        <img src="./images/classiccoollection.jpg" alt="Mini cup classic cool-lection">
                         <h3>Classic Cool-lection</h3>
                         <a href="./onzesmaken.html">Nu kopen</a>
                     </li>
                     <li>
-                        <img src="./images/minicookiedough.jpg" alt="">
+                        <img src="./images/minicookiedough.jpg" alt="Mini cup Cookie Dough">
                         <h3>Cookie Dough</h3>
                         <a href="./onzesmaken.html">Nu kopen</a>
                     </li>
                     <li>
-                        <img src="./images/minicookiedoughcoollection.png" alt="">
+                        <img src="./images/minicookiedoughcoollection.png" alt="Mini cup Cookie Dough Coollection">
                         <h3>Cookie Dough Coollection</h3>
                         <a href="./onzesmaken.html">Nu kopen</a>
                     </li>
@@ -517,7 +527,7 @@
                         <a href="./onzesmaken.html">Nu kopen</a>
                     </li>
                     <li>
-                        <img src="./images/IJSpintscups.jpg" alt="">
+                        <img src="./images/IJSpintscups.jpg" alt="Sundaes">
                         <h3>Sundaes</h3>
                         <a href="./onzesmaken.html">Alles bekijken</a>
                     </li>
@@ -526,12 +536,12 @@
         </section>
 
         <!-- Video -->
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/PDHjQBQ-GDg?si=FTta2w1rMRFAhMx9"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PDHjQBQ-GDg?si=FTta2w1rMRFAhMx9"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
         <!-- Blauwe info sectie -->
 
         <section>
@@ -539,18 +549,18 @@
                 wereld mooier te maken.</h2>
             <ul>
                 <li>
-                    <img src="./images/koehartjesicon.png"><img>
+                    <img src="./images/koehartjesicon.png" alt="koe met hartjes">
                     <h3>Zorgvuldig uitgekozen ingrediënten</h3>
                     <p>Onze ingrediënten worden met zorg uitgekozen en laten ons ijs (h)eerlijk smaken.</p>
                 </li>
                 <li>
-                    <img src="./images/peaceicon.png"><img>
+                    <img src="./images/peaceicon.png" alt="peace">
                     <h3>Gedeeld succes</h3>
                     <p>Ons doel is welvaart te creëren voor iedereen die verbonden is met ons bedrijf.</p>
                     <a href="./index.html">Onze missie en waarden</a>
                 </li>
                 <li>
-                    <img src="./images/wereldicon.png"><img>
+                    <img src="./images/wereldicon.png" alt="wereld">
                     <h3>Een verschil maken</h3>
                     <p>Wij spreken ons uit over onderwerpen die ons nauw aan het hart liggen.</p>
                     <a href="./index.html">Onderwerpen die wij belangrijk vinden</a>
@@ -562,105 +572,107 @@
 
     <footer>
 
-		<img src="./images/koemegafoon.svg" alt="">
+        <img src="./images/koemegafoon.svg" alt="">
 
-		<h3>Meld je aan voor onze nieuwsbrief</h3>
-		<p>Wij zorgen ervoor dat je als eerste op de hoogte bent van nieuwe smaken, fun activiteiten en sociale
-			initiatieven van Ben & Jerry's! Get the scoop!</p>
-		<label for="email"></label>
-		<input type="email" id="email" placeholder="Voer je e-mailadres in" name="email">
-		<button class="verzend"><img src="./images/pijltje.svg"></button>
+        <h3>Meld je aan voor onze nieuwsbrief</h3>
+        <p>Wij zorgen ervoor dat je als eerste op de hoogte bent van nieuwe smaken, fun activiteiten en sociale
+            initiatieven van Ben & Jerry's! Get the scoop!</p>
+        <form action="./index.html">
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Voer je e-mailadres in" name="email">
+            <button class="verzend"><img src="./images/pijltje.svg" alt="verzendknop"></button>
+        </form>
 
-		<h3>Blijf op de hoogte</h3>
-		<a href="./index.html">Stuur ons feedback</a>
-		<a href="./index.html">unsubscribe</a>
+        <h3>Blijf op de hoogte</h3>
+        <a href="./index.html">Stuur ons feedback</a>
+        <a href="./index.html">unsubscribe</a>
 
-		
-		<h3>Volg ons!</h3>
-		<ul>
-			<li>
-				<a href="./index.html">
-					<img src="./images/facebook.svg" alt="facebook">
-				</a>
-			</li>
 
-			<li>
-				<a href="./index.html">
-					<img src="./images/instagram.svg" alt="instagram">
-				</a>
-			</li>
+        <h3>Volg ons!</h3>
+        <ul>
+            <li>
+                <a href="./index.html">
+                    <img src="./images/facebook.svg" alt="facebook">
+                </a>
+            </li>
 
-			<li>
-				<a href="./index.html">
-					<img src="./images/tiktok.svg" alt="tiktok">
-				</a>
-			</li>
+            <li>
+                <a href="./index.html">
+                    <img src="./images/instagram.svg" alt="instagram">
+                </a>
+            </li>
 
-			<li>
-				<a href="./index.html">
-					<img src="./images/twitter.svg" alt="X (voormalig Twitter">
-				</a>
-			</li>
-		</ul>
-		
-		
-		
-		
-		
-		<h3>Meer informatie</h3>
-		<a href="./index.html">Nieuws</a>
-		<a href="./index.html">Over ons</a>
+            <li>
+                <a href="./index.html">
+                    <img src="./images/tiktok.svg" alt="tiktok">
+                </a>
+            </li>
 
-		<!-- Hier de dropdown met vlaggetjes van andere landen -->
+            <li>
+                <a href="./index.html">
+                    <img src="./images/twitter.svg" alt="X (voormalig Twitter">
+                </a>
+            </li>
+        </ul>
 
-		<form action="./index.html">
-			<label for="vlaggetjes"></label>
-			<select name="vlaggetjes" id="vlaggetjes">
-			  <option value="Nederland">🇳🇱 Nederland</option>
-			  <option value="Australië">🇦🇺 Australië</option>
-			  <option value="Oostenrijk">🇦🇹 Oostenrijk</option>
-			  <option value="België">🇧🇪 België</option>
-			  <option value="Brazilië">🇧🇷 Brazilië</option>
-			  <option value="Canada">🇨🇦 Canada</option>
-			  <option value="Tsjechië">🇨🇿 Tsjechië</option>
-			  <option value="Denemarken">🇩🇰 Denemarken</option>
-			  <option value="Finland">🇫🇮 Finland</option>
-			  <option value="Frankrijk">🇫🇷 Frankrijk</option>
-			  <option value="Duitsland">🇩🇪 Duitsland</option>
-			  <option value="Griekenland">🇬🇷 Griekenland</option>
-			  <option value="Ierland">🇮🇪 Ierland</option>
-			  <option value="Italië">🇮🇹 Italië</option>
-			  <option value="Mexico">🇲🇽 Mexico</option>
-			  <option value="Noorwegen">🇳🇴 Noorwegen</option>
-			</select>
-			
-		  </form>
 
-		<ul>
-			<li>
-				<a href="./index.html">Toegankelijkheid</a>
-			</li>
-			<li>
-				<a href="./index.html">Neem contact met ons op</a>
-			</li>
-			<li>
-				<a href="./index.html">Cookieverklaring</a>
-			</li>
-			<li>
-				<a href="./index.html">Privacyverklaring</a>
-			</li>
-			<li>
-				<a href="./index.html">Gebruiksvoorwaarden</a>
-			</li>
-			<li>
-				<a href="./index.html">Sitemap</a>
-			</li>
-			<li>
-				<a href="./index.html">Creeër je ervaring</a>
-			</li>
-		</ul>
 
-	</footer>
+
+
+        <h3>Meer informatie</h3>
+        <a href="./index.html">Nieuws</a>
+        <a href="./index.html">Over ons</a>
+
+        <!-- Hier de dropdown met vlaggetjes van andere landen -->
+
+        <form action="./index.html">
+            <label for="vlaggetjes"></label>
+            <select name="vlaggetjes" id="vlaggetjes">
+                <option value="Nederland">🇳🇱 Nederland</option>
+                <option value="Australië">🇦🇺 Australië</option>
+                <option value="Oostenrijk">🇦🇹 Oostenrijk</option>
+                <option value="België">🇧🇪 België</option>
+                <option value="Brazilië">🇧🇷 Brazilië</option>
+                <option value="Canada">🇨🇦 Canada</option>
+                <option value="Tsjechië">🇨🇿 Tsjechië</option>
+                <option value="Denemarken">🇩🇰 Denemarken</option>
+                <option value="Finland">🇫🇮 Finland</option>
+                <option value="Frankrijk">🇫🇷 Frankrijk</option>
+                <option value="Duitsland">🇩🇪 Duitsland</option>
+                <option value="Griekenland">🇬🇷 Griekenland</option>
+                <option value="Ierland">🇮🇪 Ierland</option>
+                <option value="Italië">🇮🇹 Italië</option>
+                <option value="Mexico">🇲🇽 Mexico</option>
+                <option value="Noorwegen">🇳🇴 Noorwegen</option>
+            </select>
+
+        </form>
+
+        <ul>
+            <li>
+                <a href="./index.html">Toegankelijkheid</a>
+            </li>
+            <li>
+                <a href="./index.html">Neem contact met ons op</a>
+            </li>
+            <li>
+                <a href="./index.html">Cookieverklaring</a>
+            </li>
+            <li>
+                <a href="./index.html">Privacyverklaring</a>
+            </li>
+            <li>
+                <a href="./index.html">Gebruiksvoorwaarden</a>
+            </li>
+            <li>
+                <a href="./index.html">Sitemap</a>
+            </li>
+            <li>
+                <a href="./index.html">Creeër je ervaring</a>
+            </li>
+        </ul>
+
+    </footer>
 
 
 

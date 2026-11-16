@@ -131,10 +131,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Vraag 1: Details en summary gebruiken, binnen de details een ul li gebruiken voor de nav elementen
+  - Vraag 2: De titels kloppen, zo houden
+  - Vraag 3: Zoek naar iconene die lijken op die van de ben & jerry's website, download ze als svg's.
+  - Vraag 4: Goede volgorde aangehouden, sections id's geven zodat je met het drop-down filter kunt scrollen naar de juiste sectie op de pagina
+  - Vraag 5: Picture element gebruiken. In deze code kun je de images aanpassen binnen elke media query.
 
 </details>
 
@@ -165,10 +166,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Vraag 1: geen display flex gebruiken, gebruik display grid. Dit maakt het makkelijker met het responsive maken van deze sectie
+  - Vraag 2: binnen de li nog een details tag gebruiken
+  - Vraag 3: select en option tag gebruiken
+  - Vraag 4: margin en padding van de ul op 0 zetten
+  - Vraag 5: svg in de css zetten met content url()
 
 </details>
 
@@ -196,26 +198,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik moet nog echt aan de bak en verder met mijn code, ik ben nog niet waar ik had willen zijn.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Online voortgang met Lisa en Danny.
+  - Vraag 1: Op de smaken pagina heb ik bij de header images 2 images die overlappen (op mobiel) en een background color. Ik heb hiervoor de picture tag gebruikt, maar ik krijg de picture niet te zien. Hoe los ik dit op?
+  - Vraag 2: Hoe laat ik de link scrollen naar de juiste sectie in het drop down filter?
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Vraag 1: Danny heeft dit opgelost :D
+  - Vraag 2: Door in de a de id van de sectie neer te zetten. Hiervoor ook een code zoeken die smooth naar beneden scrolld
 
 </details>
 
@@ -229,11 +225,39 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb veel plezier gehad met het stylen van de ben & jerry's website. Het was oprecht leuk om eraan te werken en ik heb veel geleerd over het gebruiken van flexbox en grid.
+
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+
+
+  ### Dit was lastig/Is niet gelukt:
+  Helaas heb ik de website niet af gekregen. Er zijn nog echt een aantal dingen die ik moet gaan maken. Apart hiervan, missen veel plaatjes nog een alt tag en is mijn bronvermelding nog niet af. De toegankelijkheidstest is ook nog niet uitgevoerd, omdat de website nog niet af was. De website mist ook een dark-mode optie.
+
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+</details>
+
+
+
+## Eindgesprek herkansing
+
+<details>
+  <summary>uitwerken voor eindgesprek</summary>
+
+  ### Je uitkomst - karakteristiek screenshots:
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
+
+
+  ### Dit ging goed/Heb ik geleerd: 
+  Ik heb veel plezier gehad met het stylen van de ben & jerry's website. Het was oprecht leuk om eraan te werken en ik heb veel geleerd over het gebruiken van flexbox en grid. Ik heb nu ook voor het eerst echt een dark-mode van een website gemaakt.
+
+  Naast het coderen van de website van ben & jerry's en het vormgeven op dezelfde manier, heb ik zelf een paar design keuzes gemaakt voor de vormgeving.
+  - De footer heb ik linear gelaten voor tablet/iPad. Ik heb dit gedaan om de informatie overzichtelijk te houden. Elementen naast elkaar zetten op dit scherm vond ik onnodig, en zorgt voor ruis en onoverzichtelijkheid. Dat is mijn mening. Vanaf een groter formaat staan de elementen wel naast elkaar met display grid.
+  - Voor de nav heb ik de keuze gemaakt om de nav op mobiel en tablet/desktop consistent te houden. Vanaf dektop verdwijnt de menu icon en komen de menu items naast elkaar te staan met display flex.
+  - In de footer heb ik ervoor gekozen om toch geen imgs van de vlaggen te gebruiken. In de select form > option value heb ik emoji's gebruikt. Ik heb eerst onderzoek gedaan naar digitale toegankelijkheid van emoji's, en of ze door screenreaders gelezen worden. Emoji's worden gelezen door screenreaders. In de bronvermelding heb ik een link staan naar het artikel.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
@@ -258,7 +282,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Vermeld de bronnen ook in je code.
 
   1. Label en input type codes: https://www.w3schools.com/tags/att_input_type_search.asp
-  2. bron 2
-  3. ...
+  2. Claude voor het berekenen van de vw van de header
+  3. Bron voor het gebruiken van vlaggetjes emoji's in de landen select form in de footer: https://digitaaltoegankelijk.nl/nieuws/digitaal-toegankelijk-gebruik-van-emojis/
+  4. StackOverflow, om de pijltjes in de nav te verbergen: https://stackoverflow.com/questions/6195329/how-can-you-hide-the-arrow-that-is-displayed-by-default-on-the-html5-details-e
+  5. Hamburgermenu, van de opdracht in codepen: https://codepen.io/shooft/pen/NPGXJGq
+  6. filter: invert(); code om mijn iconen wit te maken in dark mode van https://css-tricks.com/almanac/functions/i/invert/
 
 </details>

@@ -26,20 +26,66 @@ html {
 
     /* Categorie filter */
 
+    /* search label */
+    main section:first-of-type form {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    main section:first-of-type form input {
+        font-family: "ProximaNova", sans-serif;
+        font-size: 1.5rem;
+        padding: 1rem 1rem 1rem 1rem;
+        display: flex;
+        width: 70%;
+        border: solid 2px gray;
+        border-radius: .6rem;
+        align-items: center;
+    }
+
+    main section:first-of-type form::active {
+        border-style: solid 4px var(--bs-link-hover-color);
+    }
+
+    main section:first-of-type form input::before {
+        content: url(../images/BJsearch.svg);
+        color: var(--bs-black);
+        width: .2rem;
+        height: .2rem;
+    }
+
+    /* filter dropdown */
+    main section:first-of-type details {
+        max-width: 30rem;
+        margin-inline: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        
+    }
+
     main section:first-of-type ul li details summary {
-        border: .15rem solid;
+        border: .12rem solid;
         padding: 1.5rem 1rem 1.5rem 2rem;
-        border-radius: .5rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        font-size: 1.6rem;
     }
 
     main section:first-of-type ul li details summary::after {
         content: url(../images/pijltjenaarbeneden.svg);
-        /* display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap; */
+        color: var(--bs-white);
         padding: 0;
         margin: 0;
-        
+    }
+
+    @media (prefers-color-scheme: dark) {
+        main section:first-of-type ul li details summary::after {
+            filter: invert();
+        }
     }
 
     main section:first-of-type ul li details summary:active {
@@ -53,7 +99,19 @@ html {
         border: .1rem solid;
         border-color: var(--bs-gray-500);
         border-radius: .3rem;
-        /* display: grid; */
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    main section:first-of-type details li a {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    main section:first-of-type ul li details ul li {
+        margin-left: 2rem;
+        padding: .5rem;
     }
 
     main section:first-of-type ul li details ul li a img {
@@ -61,11 +119,24 @@ html {
         height: 4rem;
     }
 
-    /* main section:first-of-type ul li details ul li {
-        
-    } */
+    main section:first-of-type ul li details ul li a p {
+        display: inline;        /* display inline van w3schools om de p op dezelfde regel als de img te krijgen*/
+        font-size: 1.5rem;
+    }
+    
+
+    
 
     /* de smaken */
+
+    
+
+    #ijspints article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     #ijspints article ul {
         display: grid;
@@ -118,6 +189,7 @@ html {
     #ijspints article>a:first-of-type {
         font-family: "ProximaNova", sans-serif;
         color: var(--bs-link-color);
+        text-decoration: none;
         justify-content: space-between;
     }
 
@@ -132,6 +204,13 @@ html {
     }
 
     /* vegan ijs */
+
+    #vegan article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     #vegan article ul {
         display: grid;
@@ -183,7 +262,7 @@ html {
     #vegan article>a:first-of-type {
         font-family: "ProximaNova", sans-serif;
         color: var(--bs-link-color);
-        
+        text-decoration: none;
         justify-content: space-between;
     }
 
@@ -198,6 +277,13 @@ html {
     }
 
     /* bites */
+
+    #bites article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     #bites article ul {
         display: grid;
@@ -249,6 +335,7 @@ html {
     #bites article>a:first-of-type {
         font-family: "ProximaNova", sans-serif;
         color: var(--bs-link-color);
+        text-decoration: none;
         justify-content: space-between;
     }
 
@@ -263,6 +350,13 @@ html {
     }
 
     /* minicups */
+
+    #minicups article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     #minicups article ul {
         display: grid;
@@ -314,7 +408,7 @@ html {
     #minicups article>a:first-of-type {
         font-family: "ProximaNova", sans-serif;
         color: var(--bs-link-color);
-        
+        text-decoration: none;
         justify-content: space-between;
     }
 
@@ -329,6 +423,13 @@ html {
     }
 
     /* sundaes */
+
+    #sundaes article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     #sundaes article ul {
         display: grid;
@@ -380,7 +481,7 @@ html {
     #sundaes article>a:first-of-type {
         font-family: "ProximaNova", sans-serif;
         color: var(--bs-link-color);
-        
+        text-decoration: none;
         justify-content: space-between;
     }
 
@@ -396,68 +497,86 @@ html {
 
     /* de video */
 
-    iframe {
-        /* padding: 1rem 1rem 1rem 1rem; */
-        padding: 0;
-        margin: 0;
+    main section:nth-of-type(7) {
         display: flex;
-        align-items: center;
+        justify-content: center; /* horizontaal centreren */
+        align-items: center;     /* verticaal centreren, alleen zichtbaar als de section hoger is dan de iframe */
+    }
+
+    main section:nth-of-type(7) > iframe {
+        box-sizing: border-box;
+	    margin: 5rem 1rem 4rem 1rem;
+	    padding: 0;
+	    border: 0;
     }
 
     
 
     /* Blauwe info sectie */
 
-    section:last-of-type {
+    main section:last-of-type {
         background-color: var(--bs-informatie);
         display: grid;
     }
 
 
-    /* section:last-of-type img { */
-        /* width: 4.0619em;
+    main section:last-of-type img {
+        width: 4.0619em;
         height: 4.1388em;
         grid-column: 1;
         grid-row: 1/-1;
-        padding: 0.5em 0.5em 0 0;
+        padding: 0.5rem 0.5rem 0 0;
         
-    } */
+    }
     
-    section:last-of-type h2 {
+    main section:last-of-type h2 {
         font-family: "ChunkRethunk";
+        font-size: 2rem;
         color: var(--bs-black);
         padding: 1.5em 1em 1.5em 1em;
     }
 
-    section:last-of-type ul li {
+    main section:last-of-type ul {
+        padding-bottom: 5em;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    main section:last-of-type ul li {
         display: grid;
         grid-template-columns:5em 1fr ;
         grid-template-rows: min-content min-content min-content;
         font-size: 1.5em;
-        padding-bottom: 1em;
+        padding-bottom: 3.5em;
         padding-left: 0;
-        padding-right: .2em;
+        padding-right: .5em;
     }
     
-    section:last-of-type ul li h3 {
+    main section:last-of-type ul li h3 {
         font-family: "ChunkRethunk", sans-serif;
+        font-size: 2rem;
         grid-column: 2;
         padding: 0;
         margin: 0;
+        padding-bottom: .5rem;
     }
     
-    section:last-of-type ul li p {
+    main section:last-of-type ul li p {
         font-family: "ProximaNova", sans-serif;
-        padding: 0 0 .2em 0;
+        padding: 0 0 .5rem 0;
         margin: 0;
+        line-height: 2.5rem;
+        font-size: 1.8rem;
     }
     
-    section:last-of-type ul li a {
+    main section:last-of-type ul li a {
         font-family: "ProximaNova", sans-serif;
+        font-size: 1.8rem;
         color: var(--bs-link-color);
         grid-row: 3;
         grid-column: 2;
         padding: 0.2em 0 1em 0;
+        line-height: 2.5rem;
     }
 
     /* einde blauwe info section */
@@ -472,4 +591,76 @@ html {
         display: grid;
 	    grid-template-columns: 1fr 1fr 1fr;
     }
+
+    main section:last-of-type ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1.5rem 1.5rem 12rem 1.5rem;
+    }
+
+    main section:last-of-type ul li {
+        margin: 0;
+        padding: 0rem .5rem 0rem .7rem;
+        display: grid;
+        grid-template-columns: 5rem 3fr;
+    }
+
+    main section:last-of-type ul li h3 {
+        font-family: "ChunkRethunk", sans-serif;
+        font-size: 1.3rem;
+        /* grid-column: 2; */
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    main section:last-of-type ul li img {
+        width: 3.0619em;
+        height: 3.1388em;
+        padding: 0rem;
+        margin: 0;
+    }
+
+    main section:last-of-type ul li p {
+        font-size: 1.4rem;
+        margin: 0;
+        padding: 0;
+        line-height: 2rem;
+    }
+
+    main section:last-of-type ul li a {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}
+
+@media (min-width:68em) {}
+
+@media (prefers-color-scheme: dark) {
+    #ijspints article li a,
+    #vegan article li a,
+    #bites article li a,
+    #minicups article li a,
+    #sundaes article li a {
+        color: var(--bs-white);
+        border-color: var(--bs-white);
+    }
+
+    #ijspints article h2,
+    #vegan article h2,
+    #bites article h2,
+    #minicups article h2,
+    #sundaes article h2 {
+        color: var(--bs-white);
+    }
+
+    main section:first-of-type ul li details summary {
+        border: .15rem solid;
+        padding: 1.5rem 1rem 1.5rem 2rem;
+        border-radius: .5rem;
+        border-color: var(--bs-white);
+        color: var(--bs-white);
+    }
+    
+
 }
