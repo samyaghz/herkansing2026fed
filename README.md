@@ -71,7 +71,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Slaat images over
 
   ### WCAG lijst
-  Tijdens de les hebben in duo's elkaars website bekeken. Ik heb Lisa's website Claire's bekeken.
+  Tijdens de les hebben in duo's elkaars website bekeken. Ik heb Lisa's website (Claire's) bekeken.
+  <img src="readme-images/wcagtest1page1.jpeg" width="375px" alt="eerste bladzijde wcag lijst">
+  <img src="readme-images/wcagtest1page2.jpeg" width="375px" alt="tweede bladzijde wcag lijst">
+  <img src="readme-images/wcagtest1page3.jpeg" width="375px" alt="derde bladzijde wcag lijst">
+  <img src="readme-images/wcagtest1page4.jpeg" width="375px" alt="vierde bladzijde wcag lijst">
+  <img src="readme-images/wcagtest1page5.jpeg" width="375px" alt="vijfde bladzijde wcag lijst">
+
+  De wcag lijst staat ook op een figma bord: https://www.figma.com/board/I0bHbVqqnVFDzwOqNyXjws/wcag-lijsten?node-id=0-1&t=0lYZMiatpJZl9tAg-1
 
 
 </details>
@@ -186,6 +193,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  Omdat de vormgeving al toegankelijk was voor mensen die problemen hebben met hun zicht en motoriek, is er niet veel veranderd. De grootste verbetering hierin is het feit dat er nu een dark-mode van de website is. Die heeft ben&jerry nu niet.
+
+  - Het menu wordt niet meer overgeslagen
+  - Knoppen, links, alts en headings worden benoemd door de screenreader
+  - De screenreader leest ook de vlaggen van de landen voor in het select form
+  - De screenreader leest alles op logische volgorde
+
+  <img src="readme-images/wcagtest2page1.jpeg" width="375px" alt="eerste bladzijde wcag lijst">
+  <img src="readme-images/wcagtest2page2.jpeg" width="375px" alt="tweede bladzijde wcag lijst">
+  <img src="readme-images/wcagtest2page3.jpeg" width="375px" alt="derde bladzijde wcag lijst">
+  <img src="readme-images/wcagtest2page4.jpeg" width="375px" alt="vierde bladzijde wcag lijst">
+  <img src="readme-images/wcagtest2page5.jpeg" width="375px" alt="vijfde bladzijde wcag lijst">
+
+  De wcag lijst staat ook op een figma bord: https://www.figma.com/board/I0bHbVqqnVFDzwOqNyXjws/wcag-lijsten?node-id=0-1&t=0lYZMiatpJZl9tAg-1
+
 </details>
 
 
@@ -225,19 +247,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
-
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb veel plezier gehad met het stylen van de ben & jerry's website. Het was oprecht leuk om eraan te werken en ik heb veel geleerd over het gebruiken van flexbox en grid.
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Helaas heb ik de website niet af gekregen. Er zijn nog echt een aantal dingen die ik moet gaan maken. Apart hiervan, missen veel plaatjes nog een alt tag en is mijn bronvermelding nog niet af. De toegankelijkheidstest is ook nog niet uitgevoerd, omdat de website nog niet af was. De website mist ook een dark-mode optie.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Plaatjes zijn niet relevant omdat het niet af was.
+
 </details>
 
 
@@ -248,24 +267,35 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
+  <img src="readme-images/mijnhomepagina.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="readme-images/mijntweedepagina.png" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Ik heb veel plezier gehad met het stylen van de ben & jerry's website. Het was oprecht leuk om eraan te werken en ik heb veel geleerd over het gebruiken van flexbox en grid. Ik heb nu ook voor het eerst echt een dark-mode van een website gemaakt.
+  Ik heb veel plezier gehad met het stylen van de ben & jerry's website. Het was oprecht leuk om eraan te werken en ik heb veel geleerd over het gebruiken van flexbox en grid. Ik heb nu ook voor het eerst echt een dark-mode van een website gemaakt. Ik ben ook wel trots op mezelf dat ik de code allemaal zelf heb geschreven en er een eigen structuur aan heb gegeven.
 
   Naast het coderen van de website van ben & jerry's en het vormgeven op dezelfde manier, heb ik zelf een paar design keuzes gemaakt voor de vormgeving.
   - De footer heb ik linear gelaten voor tablet/iPad. Ik heb dit gedaan om de informatie overzichtelijk te houden. Elementen naast elkaar zetten op dit scherm vond ik onnodig, en zorgt voor ruis en onoverzichtelijkheid. Dat is mijn mening. Vanaf een groter formaat staan de elementen wel naast elkaar met display grid.
-  - Voor de nav heb ik de keuze gemaakt om de nav op mobiel en tablet/desktop consistent te houden. Vanaf dektop verdwijnt de menu icon en komen de menu items naast elkaar te staan met display flex.
-  - In de footer heb ik ervoor gekozen om toch geen imgs van de vlaggen te gebruiken. In de select form > option value heb ik emoji's gebruikt. Ik heb eerst onderzoek gedaan naar digitale toegankelijkheid van emoji's, en of ze door screenreaders gelezen worden. Emoji's worden gelezen door screenreaders. In de bronvermelding heb ik een link staan naar het artikel.
+  - Voor de nav heb ik de keuze gemaakt om de nav op mobiel en tablet/desktop consistent te houden. Vanaf desktop verdwijnt de menu icon en komen de menu items naast elkaar te staan met display flex.
+  - In de footer heb ik ervoor gekozen om toch geen imgs van de vlaggen te gebruiken. In de select form > option value heb ik emoji's gebruikt. Ik heb eerst onderzoek gedaan naar digitale toegankelijkheid van emoji's, en of ze door screenreaders gelezen worden. Emoji's worden gelezen door screenreaders. Bron: https://digitaaltoegankelijk.nl/nieuws/digitaal-toegankelijk-gebruik-van-emojis/
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  In de toekomst wil ik programmeren serieuzer nemen. Ergens heb ik mezelf wel bewezen dat ik het wel kan, ook als ik het helemaal niet leuk vind. Het is bij mij nog heel beginnend en ik sta nog steeds op de blauwe piste, maar ik denk met veel oefenen en meer tijd dat ik er handiger in zal worden. Ik denk dat meer verstand hebben van code mij veel gaat helpen in mijn carrière als UX designer. Dit is een motivatie die ik zal meenemen in mijn verdere loopbaan.
+
+  <img src="readme-images/toponderdeel1.jpeg" width="375px" alt="top">
+  <img src="readme-images/toponderdeel2.jpeg" width="375px" alt="top">
+  <img src="readme-images/toponderdeel3.jpeg" width="375px" alt="top">
+  <img src="readme-images/toponderdeel4.jpeg" width="375px" alt="top">
+  <img src="readme-images/toponderdeel5.jpeg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik vond de navigatie en het stylen van de picture elementen die op elkaar staan op de "onze smaken" pagina lastig. Dit komt omdat er binnenin een navigatie, nog een drop-down navigatie zat in sommige links. Ook waren er teveel onderdelen om in 1 flexbox te zetten die past over de hele navigatie op desktop breedte. Ik denk dat dit de meest uitdagende opdracht was voor mij. Ik heb vaak de opdracht opnieuw moeten doen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Daarnaast is het mij niet gelukt om de plaatjes in de picture tag op de smaken pagina groter te krijgen. Ik heb er een grid van gemaakt, zodat ik de tekst naast de foto's kon krijgen. 
+
+  De elementen doen het wel allemaal, en de screenreader leest ze voor, alleen is het me niet gelukt om alles netjes te stylen. Ik ben er achter gekomen dat dit wellicht te maken had met de keuzes die ik heb gemaakt tijdens het schrijven van de html. Hier wil ik in de toekomst meer aandacht aan besteden. Ik weet nu dat het beter is om vaker je html te valideren, terwijl je ermee bezig bent.
+
+  <img src="readme-images/bummeronderdeel" width="375px" alt="bummer">
 </details>
 
 
@@ -287,5 +317,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   4. StackOverflow, om de pijltjes in de nav te verbergen: https://stackoverflow.com/questions/6195329/how-can-you-hide-the-arrow-that-is-displayed-by-default-on-the-html5-details-e
   5. Hamburgermenu, van de opdracht in codepen: https://codepen.io/shooft/pen/NPGXJGq
   6. filter: invert(); code om mijn iconen wit te maken in dark mode van https://css-tricks.com/almanac/functions/i/invert/
+  7. Chatgpt hielp een beetje met flexbox van de navigatie
 
 </details>

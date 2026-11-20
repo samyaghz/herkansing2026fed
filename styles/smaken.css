@@ -4,6 +4,8 @@ html {
 	}
 }
 
+
+
 @media (min-width:38em) {
 
     /* eerste section */
@@ -18,11 +20,53 @@ html {
         height: 100%;
     } */
 
-    header section article picture {
+    /* header section article {
         background-color: var(--bs-achtergrond-ijswolk);
+    } */
+
+    /* de foto */
+
+    header picture {
         width: 100%;
         height: 100%;
     }
+
+    header picture:nth-of-type(3) {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    header picture:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 2;
+    }
+    
+    header picture:nth-of-type(2) {
+        background-color: var(--bs-achtergrond-ijswolk);
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 1;
+    }
+    
+    header picture:nth-of-type(3) {
+        display: none;
+    }
+    
+    header picture img {
+        display: block;
+        width: 100%;
+    }
+
+    header p {
+        line-height: 1.5em;
+    }
+
+    
 
     /* Categorie filter */
 
@@ -142,7 +186,6 @@ html {
         display: grid;
 	    grid-template-columns: 1fr 1fr;
 	    gap: 2rem;
-	    /* padding: 1em; */
 	    margin: 0;
         width: 100%;
         height: 100%;
@@ -151,11 +194,6 @@ html {
     }
 
     #ijspints article li {
-        
-        /* grid-template-columns: 1fr 1fr; */
-        /* position: relative; */
-        /* width: 100%;
-        height: 100%; */
         gap: 3rem;
         padding: 1rem;
         align-items: center;
@@ -187,6 +225,7 @@ html {
     }
 
     #ijspints article>a:first-of-type {
+        padding-right: 3rem;
         font-family: "ProximaNova", sans-serif;
         color: var(--bs-link-color);
         text-decoration: none;
@@ -194,18 +233,16 @@ html {
     }
 
     #ijspints ul li img {
-        /* width: 10.8125em;
-        height: 10.8125em; */
         max-width: 100%;
         background-color: var(--bs-achtergrond-smaken);
         border-radius: 1.5rem;
-        /* margin: .3em .3em .3em .3em; */
         padding: 1em;
     }
 
     /* vegan ijs */
 
     #vegan article {
+        margin-top: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -216,7 +253,6 @@ html {
         display: grid;
 	    grid-template-columns: 1fr 1fr;
 	    gap: 2rem;
-	    /* padding: 1em; */
 	    margin: 0;
         width: 100%;
         height: 100%;
@@ -225,23 +261,16 @@ html {
     }
 
     #vegan article li {
-        
-        /* grid-template-columns: 1fr 1fr; */
-        /* position: relative; */
-        /* width: 100%;
-        height: 100%; */
         gap: 3rem;
         padding: 1rem;
         align-items: center;
-
     }
 
     #vegan article h2 {
+        padding-left: 3rem;
         font-family: "ChunkRethunk", sans-serif;
         font-size: 1.5rem;
         color:var(--bs-black);
-        
-
     }
 
     #vegan article h3 {
@@ -260,6 +289,7 @@ html {
     }
 
     #vegan article>a:first-of-type {
+        padding-right: 3rem;
         font-family: "ProximaNova", sans-serif;
         color: var(--bs-link-color);
         text-decoration: none;
@@ -267,18 +297,16 @@ html {
     }
 
     #vegan ul li img {
-        /* width: 10.8125em;
-        height: 10.8125em; */
         max-width: 100%;
         background-color: var(--bs-achtergrond-smaken);
         border-radius: 1.5rem;
-        /* margin: .3em .3em .3em .3em; */
         padding: 1em;
     }
 
     /* bites */
 
     #bites article {
+        margin-top: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -289,7 +317,6 @@ html {
         display: grid;
 	    grid-template-columns: 1fr 1fr;
 	    gap: 2rem;
-	    /* padding: 1em; */
 	    margin: 0;
         width: 100%;
         height: 100%;
@@ -298,11 +325,6 @@ html {
     }
 
     #bites article li {
-        
-        /* grid-template-columns: 1fr 1fr; */
-        /* position: relative; */
-        /* width: 100%;
-        height: 100%; */
         gap: 3rem;
         padding: 1rem;
         align-items: center;
@@ -310,11 +332,10 @@ html {
     }
 
     #bites article h2 {
+        padding-left: 3rem;
         font-family: "ChunkRethunk", sans-serif;
         font-size: 1.5rem;
         color:var(--bs-black);
-        
-
     }
 
     #bites article h3 {
@@ -333,6 +354,7 @@ html {
     }
 
     #bites article>a:first-of-type {
+        padding-right: 3rem;
         font-family: "ProximaNova", sans-serif;
         color: var(--bs-link-color);
         text-decoration: none;
@@ -340,18 +362,16 @@ html {
     }
 
     #bites ul li img {
-        /* width: 10.8125em;
-        height: 10.8125em; */
         max-width: 100%;
         background-color: var(--bs-achtergrond-smaken);
         border-radius: 1.5rem;
-        /* margin: .3em .3em .3em .3em; */
         padding: 1em;
     }
 
     /* minicups */
 
     #minicups article {
+        margin-top: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -362,7 +382,6 @@ html {
         display: grid;
 	    grid-template-columns: 1fr 1fr;
 	    gap: 2rem;
-	    /* padding: 1em; */
 	    margin: 0;
         width: 100%;
         height: 100%;
@@ -371,23 +390,16 @@ html {
     }
 
     #minicups article li {
-        
-        /* grid-template-columns: 1fr 1fr; */
-        /* position: relative; */
-        /* width: 100%;
-        height: 100%; */
         gap: 3rem;
         padding: 1rem;
         align-items: center;
-
     }
 
     #minicups article h2 {
+        padding-left: 3rem;
         font-family: "ChunkRethunk", sans-serif;
         font-size: 1.5rem;
         color:var(--bs-black);
-        
-
     }
 
     #minicups article h3 {
@@ -406,6 +418,7 @@ html {
     }
 
     #minicups article>a:first-of-type {
+        padding-right: 3rem;
         font-family: "ProximaNova", sans-serif;
         color: var(--bs-link-color);
         text-decoration: none;
@@ -413,18 +426,16 @@ html {
     }
 
     #minicups ul li img {
-        /* width: 10.8125em;
-        height: 10.8125em; */
         max-width: 100%;
         background-color: var(--bs-achtergrond-smaken);
         border-radius: 1.5rem;
-        /* margin: .3em .3em .3em .3em; */
         padding: 1em;
     }
 
     /* sundaes */
 
     #sundaes article {
+        margin-top: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -435,7 +446,6 @@ html {
         display: grid;
 	    grid-template-columns: 1fr 1fr;
 	    gap: 2rem;
-	    /* padding: 1em; */
 	    margin: 0;
         width: 100%;
         height: 100%;
@@ -444,23 +454,16 @@ html {
     }
 
     #sundaes article li {
-        
-        /* grid-template-columns: 1fr 1fr; */
-        /* position: relative; */
-        /* width: 100%;
-        height: 100%; */
         gap: 3rem;
         padding: 1rem;
         align-items: center;
-
     }
 
     #sundaes article h2 {
+        padding-left: 3rem;
         font-family: "ChunkRethunk", sans-serif;
         font-size: 1.5rem;
         color:var(--bs-black);
-        
-
     }
 
     #sundaes article h3 {
@@ -479,6 +482,7 @@ html {
     }
 
     #sundaes article>a:first-of-type {
+        padding-right: 3rem;
         font-family: "ProximaNova", sans-serif;
         color: var(--bs-link-color);
         text-decoration: none;
@@ -486,12 +490,9 @@ html {
     }
 
     #sundaes ul li img {
-        /* width: 10.8125em;
-        height: 10.8125em; */
         max-width: 100%;
         background-color: var(--bs-achtergrond-smaken);
         border-radius: 1.5rem;
-        /* margin: .3em .3em .3em .3em; */
         padding: 1em;
     }
 
@@ -583,6 +584,13 @@ html {
 }
 
 @media (min-width:57em) {
+
+    /* header nav {
+        display: grid;
+        position: absolute;
+        
+    } */
+
     #ijspints article ul,
     #vegan article ul,
     #bites article ul,
@@ -634,7 +642,101 @@ html {
     }
 }
 
-@media (min-width:68em) {}
+@media (min-width:68em) {
+
+    /* beetje chatgpt gebruikt voor de header picture. */
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    header picture:nth-of-type(3) {
+        display: block;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr;
+        padding:0;
+        margin:0;
+        margin-bottom: 4rem;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+    }
+
+    header picture:nth-of-type(1) {
+        grid-column: 2;
+        grid-row: 1 / 3;
+        align-self: end;
+        justify-self: end;
+        width: 100%;
+        height: auto;
+    }
+
+    /* header a:first-of-type img {
+        z-index: 100;
+        position: relative;
+        
+    } */
+
+    /* header section article picture:nth-of-type(1) img {
+        width: calc(100vw);
+    } */
+
+    header picture:nth-of-type(2) {
+        grid-column: 1 / -1;
+        grid-row: 1 / 3;
+        align-self: start;
+    }
+
+    header picture:nth-of-type(3) {
+        display: block;
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        align-self: start;
+        width: 100%;
+        z-index: 3;
+        
+        
+    }
+
+    header picture:nth-of-type(3) img>svg {
+        grid-column: span 3;
+        justify-self: end;
+        align-self: start;
+        position: relative;
+    }
+
+    header h2 {
+        grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		align-self: end;
+		margin:0;
+		z-index: 10;
+		color: var(--bs-black);
+		padding: 0 2rem 0 2.5rem;
+    }
+
+    header p {
+        grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		align-self: start;
+		padding: 0 1em 2em 2em;
+		z-index: 10;                 /* z-index gebruikt om de p bovenop de foto te krijgen */
+		color: var(--bs-black);
+		font-size: 1.3rem;
+		line-height: 1.5em;
+        margin:0;
+    }
+}
+
+html:has( nav.openMenu ) section:first-of-type img:nth-of-type(2) {
+	opacity: 0;
+	transition: 0s;
+}
 
 @media (prefers-color-scheme: dark) {
     #ijspints article li a,

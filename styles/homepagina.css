@@ -2,6 +2,12 @@
 
 @media (min-width:38em) {
 
+    header picture img {
+        width: 100%;
+        height: 100%;
+        margin-top: 2rem;
+    }
+
     /* verkooppunten sectie */
 
     section:first-of-type {
@@ -13,8 +19,6 @@
     }
 
     section:first-of-type img {
-        /* width: 25em;
-        height: 16,6875em; */
         width: 100%;
         border-radius: 1.5rem;
     }
@@ -55,14 +59,10 @@
     section:nth-of-type(2) {
         background-color: var(--bs-link-hover-color);
         padding-bottom: 5rem;
-        /* margin-bottom: 5rem; */
     }
 
     section:nth-of-type(2) img {
-        /* width: 27.5em;
-        height: 27.5em; */
         width: 100%;
-        /* box-sizing: border-box; */
     }
 
     section:nth-of-type(2) h2 {
@@ -106,15 +106,10 @@
     }
 
     section:nth-of-type(3) li {
-        /* flex-direction: column; */
-        /* box-sizing: content-box; */
-        /* position: relative; */
         width: 100%;
         height: 100%;
         align-items: center;
         padding: 1rem 1.5rem 1.5rem 1.5rem;
-        /* flex-wrap: wrap; */
-        /* justify-content: space-evenly; */
     }
 
     section:nth-of-type(3) h2 {
@@ -125,12 +120,8 @@
     }
 
     section:nth-of-type(3) img {
-        /* width: 10.8125em;
-        height: 10.8125em; */
         max-width: 100%;
         border-radius: .7rem;
-        
-        /* padding: 1rem 1rem 1.5rem 1rem; */
     }
 
 
@@ -253,7 +244,6 @@
     }
 
     /* Topverhalen sectie */
-
     section:nth-of-type(3) h2 {
         padding-left: 2.5rem;
     }
@@ -276,8 +266,6 @@
         border-radius: 1rem;
         margin-bottom: 1.5rem;
     }
-
-    
     
     
     /* Blauwe info sectie */
@@ -321,48 +309,60 @@
         font-size: 1.4rem;
         line-height: 2rem;
     }
-
-    
-
-
 }
 
 /* Desktop */
 @media (min-width:68em) {
 
-    /* Header een grid gemaakt zodat verschillende elementen netjes naast elkaar komen te staan, 
-    verdeeld door 2 columns en 2 rows van 15em breed */
+    /* Header een grid gemaakt zodat verschillende elementen netjes naast elkaar komen te staan*/
     header {
         display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 15em 15em;
-		/* position: relative; */
+    }
+
+    header nav {
+        z-index: 1000000;
     }
 
     /* Claude gebruikt om de width te calculeren */
-    header>picture {
+    header>picture img {
+
+        grid-column: 1;
+        width: calc(100vw + 2rem);
+        grid-row: 1;
         grid-column: 1 / -1 ;
 		grid-row: 1 / 4;
-		width: calc(100vw + 2rem);
-        /* 100vw gebruikt om de foto 100% van het scherm te laten nemen, met 2 rem extra zodat het mooi past */
+        margin-top: 2em;
+        /* 100vw gebruikt om de foto 100% van het scherm te laten nemen, met 2rem extra zodat het mooi past */
     }
     
     /* grid verdeeld door 2 zodat alle tekst en de a aan de linkerkant van de foto komen te staan */
     header h2 {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: end;
+        padding: 0 2rem 0 .8rem;
+        z-index: 100;
         grid-column: 1 / 2;
 		grid-row: 1 / 2;
 		align-self: end;
 		margin:0;
 		z-index: 100;
 		color: var(--bs-black);
-		padding: 0 2rem 0 .8rem;
+		padding: 1 2rem 1 2rem;
     }
 
     header p {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: start;
+        z-index: 100;
+        padding: 0 1em 2em 1em;
+        line-height: 1.5em;
         grid-column: 1 / 2;
 		grid-row: 2 / 3;
 		align-self: start;
-		padding: 0 1em 2em 1em;
+		padding: 1em 1em 1em 1em;
 		z-index: 100;                 /* z-index gebruikt om de p bovenop de foto te krijgen */
 		color: var(--bs-black);
 		font-size: 1.3rem;
@@ -370,17 +370,49 @@
         margin:0;
     }
 
-    header a {
+    header a:last-of-type {
         grid-column: 1 / 2;
 		grid-row: 2 / 3;
-		align-self: center;          /* code van */
+		align-self: center;          /* code van Claude */
 		z-index: 100;
-        margin: 2em auto 1em 2em;
+        /* margin: 2em auto 1em 2em; */
+    }
+
+    header > h2 {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: end;
+        z-index: 100;
+    }
+
+    /* Tekst onder titel */
+    header > p {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: start;
+        z-index: 100;
+    }
+
+    /* Gele actieknop onder tekst */
+    header > a:last-of-type {
+        grid-column: 1;
+        grid-row: 4;
+        justify-self: start;
+        align-self: start;
+        z-index: 100;
+    }
+
+    /* transform gebruikt uiteindelijk want het werkte niet met de grid-rows */
+    header > h2,
+    header > p,
+    header > a:last-of-type {
+        transform: translateY(-13rem);
     }
 
     /* verkooppunten */
     section:first-of-type {
         width: 50%;
+        margin-top: 0;
     }
 
     /* doe mee sectie */
