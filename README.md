@@ -295,7 +295,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   De elementen doen het wel allemaal, en de screenreader leest ze voor, alleen is het me niet gelukt om alles netjes te stylen. Ik ben er achter gekomen dat dit wellicht te maken had met de keuzes die ik heb gemaakt tijdens het schrijven van de html. Hier wil ik in de toekomst meer aandacht aan besteden. Ik weet nu dat het beter is om vaker je html te valideren, terwijl je ermee bezig bent.
 
-  <img src="readme-images/bummeronderdeel" width="375px" alt="bummer">
+  <img src="readme-images/bummeronderdeel.jpeg" width="375px" alt="bummer">
 </details>
 
 
