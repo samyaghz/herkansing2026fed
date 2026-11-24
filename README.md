@@ -318,5 +318,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   5. Hamburgermenu, van de opdracht in codepen: https://codepen.io/shooft/pen/NPGXJGq
   6. filter: invert(); code om mijn iconen wit te maken in dark mode van https://css-tricks.com/almanac/functions/i/invert/
   7. Chatgpt hielp een beetje met flexbox van de navigatie
+  8. overflow:visible code van https://css-tricks.com/almanac/properties/o/overflow/
+  9. visually hidden code van https://www.a11yproject.com/posts/how-to-hide-content/
 
 </details>

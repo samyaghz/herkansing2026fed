@@ -19,8 +19,3 @@ function toggleMenu() {
   // toggle
   deNav.classList.toggle("openMenu");
 }
- 
-/********************/
-/* microinteractie */
-/*******************/
-
